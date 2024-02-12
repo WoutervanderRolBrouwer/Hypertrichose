@@ -27,7 +27,7 @@ li {
   float: left;
 }
 
-li a:not(.behandelingen, .logo) {
+li a:not(.contact, .logo) {
   display: block;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -46,7 +46,7 @@ li a:hover {
   border-bottom: 1px solid;
   border-left: 1px solid;
   border-right: 1px solid;
-  width: 43%;
+  width: 38%;
   padding: 10px;
   margin: auto;
 }
@@ -68,4 +68,3 @@ a:active {
   flex: 1;
 }
 
-//test
