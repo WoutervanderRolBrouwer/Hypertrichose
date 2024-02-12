@@ -1,0 +1,70 @@
+#nav ul .navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  float: center;
+
+}
+
+#nav a {
+  display: block;
+  padding: 8px;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: left;
+}
+
+li a:not(.behandelingen, .logo) {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: auto;
+  border-right: 1px solid;
+}
+
+/*Dit houd in dat de navbar knop de kleur #111 (zwart) word wanneer je er met je muis overheen gaat */
+li a:hover {
+  background-color: #c0c0c0;
+}
+
+.rectangle:not(.img) {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  width: 43%;
+  padding: 10px;
+  margin: auto;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-main {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  flex: 1;
+}
+
