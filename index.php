@@ -13,9 +13,9 @@
     <div class="hamburger-menu">
         <div class="rectangle">
             <ul class="navbar" id="nav">
-                <li><a href="index.php" id="homepage">HOME</a></li>
-                <li><a href="infopage/information.php">INFORMATION</a></li>
-                <li><a href="form/form.php">FORM</a></li>
+                <li><a class="home" href="index.php" id="home">HOME</a></li>
+                <li><a class="information" href="infopage/information.php">INFORMATION</a></li>
+                <li><a class="form" href="form/form.php">FORM</a></li>
                 <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
             </ul>
         </div>
