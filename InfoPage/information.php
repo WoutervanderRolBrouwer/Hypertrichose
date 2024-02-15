@@ -13,11 +13,11 @@
     <div class="hamburger-menu">
         <div class="rectangle">
             <ul class="navbar" id="nav">
-                <li><a href="index.php" id="homepage">HOMEPAGE</a></li>
-                <li><a href="infopage/information.php">INFORMATION</a></li>
-                <li><a href="form/form.php">FORM</a></li>
-                <li><a href="contact/contact.php">CONTACT</a></li>
-                <li><a class="quiz.php" href="quiz/quiz.php">BEHANDELINGEN</a></li>
+                <li><a href="../index.php" id="home">HOME</a></li>
+                <li><a href="../infopage/information.php">INFORMATION</a></li>
+                <li><a href="../form/form.php">FORM</a></li>
+                <li><a href="../contact/contact.php">CONTACT</a></li>
+                <li><a class="quiz.php" href="../quiz/quiz.php">BEHANDELINGEN</a></li>
             </ul>
         </div>
     </div>
