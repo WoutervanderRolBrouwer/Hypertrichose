@@ -25,7 +25,7 @@ li {
   float: left;
 }
 
-li a:not(.contact, .logo) {
+li a:not(.behandelingen, .logo) {
   display: block;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -44,7 +44,7 @@ li a:hover {
   border-bottom: 1px solid;
   border-left: 1px solid;
   border-right: 1px solid;
-  width: 30%;
+  width: 44%;
   padding: 10px;
   margin: auto;
 }
@@ -64,6 +64,22 @@ a:active {
 
 .hamburger-menu {
   flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Corben", Georgia, Times, serif;
+}
+
+p, div {
+  font-family: "Nobile", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.div {
+  box-shadow: 0 0 1em 1em #ccc;
 }
 
 /*# sourceMappingURL=style.css.map */
