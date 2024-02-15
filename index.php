@@ -25,7 +25,20 @@
     </div>
 </div>
 
+<section>
 
+<video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+</video>
+
+    <div class="banner">
+        <div class="content">
+            <h1></h1>
+            <p1></p1>
+            <button id="myBtn" onclick="myFunction">Pause</button>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
