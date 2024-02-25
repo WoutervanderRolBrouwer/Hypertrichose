@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypertrichose Information</title>
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"  href="../css/style.css" />
     <link rel="stylesheet" href="Styling\info.css" />
-    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
-    <div class="navbar-main">
-        <img class="logo" src="../images/logo.png" alt="" width="90" height="90">
-        <div class="hamburger-menu">
-            <div class="rectangle">
-                <ul class="navbar" id="nav">
-                    <li><a href="../index.php" id="home">HOME</a></li>
-                    <li><a href="../infopage/information.php">INFORMATION</a></li>
-                    <li><a href="../form/form.php">FORM</a></li>
-                    <li><a href="../contact/contact.php">CONTACT</a></li>
-                    <li><a class="quiz.php" href="../quiz/quiz.php">BEHANDELINGEN</a></li>
-                </ul>
-            </div>
+<div class="navbar-main">
+    <img class="logo" src="../img/logo.png" alt="" width="90" height="85"> 
+    <div class="hamburger-menu">
+        <div class="rectangle">
+            <ul class="navbar" id="nav">
+                <li><a class="home" href="../index.php" id="home">HOME</a></li>
+                <li><a class="information" href="../infopage/information.php">INFORMATION</a></li>
+                <li><a class="form" href="../form/form.php">FORM</a></li>
+                <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
+                <li><a class="behandelingen" href="../behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
+            </ul>
         </div>
     </div>
-    <main>
+</div>
+<main>
+<img src="../img/harigmeisje.png" alt="" class="banner" width="100%" height="525">
         <main class="container">
             <section class="row">
+            
 
 
                 <section class="row">
@@ -42,7 +46,7 @@
 
                     <div class="col">
                         <div class="inner">
-                            <p><strong>Wat is Hypertrichose</strong>
+                            <strong>Wat is Hypertrichose</strong>
                             <p>Hypertrichosis is wanneer er te veel haar op het lichaam groeit op plekken waar het
                                 normaal niet zoveel hoort te zijn.
                                 Dit kan gebeuren bij zowel jongens als meisjes. Het haar groeit meer dan wat normaal is
@@ -70,7 +74,7 @@
 
                     <div class="col">
                         <div class="inner">
-                            <p><strong>Hoe onstaat hypertrichosis </strong>
+                            <strong>Hoe onstaat hypertrichosis </strong>
                             <p>Hypertrichosis kan ontstaan door verschillende manieren, maar we begrijpen nog niet alles
                                 over hoe dit precies gebeurt. Hier zijn een paar manieren waarop het kan gebeuren:
                                 Sommige hele dunne, lichte haartjes op ons lichaam kunnen veranderen in langere, dikkere
@@ -103,7 +107,7 @@
 
                 <div class="col">
                     <div class="inner">
-                        <p><strong>hypertrichosis vorm</strong>
+                        <strong>hypertrichosis vorm</strong>
                         <p>Haar groei kan optreden bij de geboorte maar ook bij moedervlekken ,rug en wenkbrauw .</p>
                         <p>Dit kan ook gebeuren bij pasgeboren baby's, waarbij ze bedekt zijn met fijne haartjes genaamd
                             lanugo (lanugo zijn baby haartjes die je krijgt bij de geboorte).
@@ -128,8 +132,8 @@
                     <div class="inner">
                         <img
                             src="https://cdn.discordapp.com/attachments/1171422337468473365/1210290473605013545/Schermafbeelding_2024-02-22_191950.png?ex=65ea05d7&is=65d790d7&hm=20c10d8716523eb4b8629ab2e07fb0257de401615b12ceac2af41fb297d21a6a&">
-                        <a href="https://www.iqhealthcare.nl/nl/kennisbank/blog/het-weerwolfsyndroom-of-hypertrichose/">Meer
-                            lezen</a>
+                        <a href="https://www.iqhealthcare.nl/nl/kennisbank/blog/het-weerwolfsyndroom-of-hypertrichose/"><strong>Meer
+                            lezen</strong>
 
                     </div>
                 </div>
@@ -138,8 +142,8 @@
                     <div class="inner">
                         <img
                             src="https://cdn.discordapp.com/attachments/1171422337468473365/1210290663896391790/image.png?ex=65ea0604&is=65d79104&hm=638daa553fbf24500a8cbee3687be851b9a89a8a893810f4ecbca9ee9ddbe0f4&">
-                        <a href="https://www.iqhealthcare.nl/nl/kennisbank/blog/het-weerwolfsyndroom-of-hypertrichose/">Meer
-                            lezen</a>
+                        <a href="https://www.iqhealthcare.nl/nl/kennisbank/blog/het-weerwolfsyndroom-of-hypertrichose/"> <strong>Meer
+                            lezen </strong>
                     </div>
                 </div>
 
