@@ -6,7 +6,8 @@
     <title>Document</title>
     <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
-    <link rel="stylesheet"  href="css/style.css" />
+    <link rel="stylesheet"  href="infopage/styling/info.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    
@@ -25,8 +26,66 @@
     </div>
 </div>
 
-<section>
+<section class="banner">
+    <div class="row">
+        <div class="container">
+            <img src="" alt="">
+        </div>
+    </div>
 
+
+    </div>
+    <main>
+        <section id="Info-img">
+        <div class="container.row">
+                <div class="service-block col-12-col-l-1s">
+                    <div class="inner">
+                    <h1>HOMEPAGE</h1>
+                        <img src="" alt="" />
+                    </div>
+                </div>
+        <div class="service-block col-12-col-l-1s">
+                    <div class="inner">
+                    <p><strong>Heb je ook last van Hypertrichose, dit is de juiste plek!</strong>
+                    </p><p>Dit is een site waar je kan leren over medemensen met dit syndroom</p>
+                      
+                    </div>
+                </div>
+            </div>
+            
+
+                <div class="service-block col-12-col-l-1s">
+                    <div class="inner">
+                    <p><strong><img src="img/weerwolffamilie.jpg" alt="Weerwolf familie"><br><br></img></strong>
+                        <a href="https://www.demorgen.be/nieuws/familie-weerwolven-krijgt-behandeling~b95356c9/?referrer=https://www.google.com/">Een Nepalese familie heeft een zeldzame afwijking: er groeit heel veel haar op hun gezicht. Devi Budhathoki (37), haar twee dochters en haar zoon zullen een behandeling krijgen in Kathmandu. Ze lijden aan hypertrichosis, ofwel het weerwolf-syndroom.</a><a href="https://www.demorgen.be/nieuws/familie-weerwolven-krijgt-behandeling~b95356c9/?referrer=https://www.google.com/">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="information">
+            <div class="container.row">
+                <div class="service-block col-12-col-l-1s">
+                    <div class="inner">
+                    <p><strong><img src="img/weerwolfsyndroommeisje.png" alt="" width="500px" height="254px"><br><br></img></strong>
+                        <a href="https://www.standaard.be/cnt/dmf20190829_04581754">Al zeker zeventien jonge kinderen zijn in Spanje bij de dokter beland met het zogenaamde 'weerwolfsyndroom', een vorm van extreme haargroei op het gezicht en het lichaam.</a>
+                    </div>
+                </div>
+
+
+                <div class="service-block col-12-col-l-1s">
+                    <div class="inner">
+                    <p><strong></strong>
+                        <p><img src="img/weerwolfzussen.jpg" rel="Zussen met hypertrichose"></img></p>
+                        <p>Al zeker zeventien jonge kinderen zijn in Spanje bij de dokter beland met het zogenaamde 'weerwolfsyndroom', een vorm van extreme haargroei op het gezicht en het lichaam.</p>
+                       <a href="https://www.standaard.be/cnt/dmf20190829_04581754">Leer meer!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ 
 
 </body>
 </html>

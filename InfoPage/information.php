@@ -132,8 +132,7 @@
                     <div class="inner">
                         <img
                             src="https://cdn.discordapp.com/attachments/1171422337468473365/1210290473605013545/Schermafbeelding_2024-02-22_191950.png?ex=65ea05d7&is=65d790d7&hm=20c10d8716523eb4b8629ab2e07fb0257de401615b12ceac2af41fb297d21a6a&">
-                        <a href="https://www.iqhealthcare.nl/nl/kennisbank/blog/het-weerwolfsyndroom-of-hypertrichose/"><strong>Meer
-                            lezen</strong>
+                        <a href="https://www.iqhealthcare.nl/nl/kennisbank/blog/het-weerwolfsyndroom-of-hypertrichose/"><strong>iq healthcare website over weerwolvensyndroom</strong>
 
                     </div>
                 </div>
@@ -142,8 +141,7 @@
                     <div class="inner">
                         <img
                             src="https://cdn.discordapp.com/attachments/1171422337468473365/1210290663896391790/image.png?ex=65ea0604&is=65d79104&hm=638daa553fbf24500a8cbee3687be851b9a89a8a893810f4ecbca9ee9ddbe0f4&">
-                        <a href="https://www.iqhealthcare.nl/nl/kennisbank/blog/het-weerwolfsyndroom-of-hypertrichose/"> <strong>Meer
-                            lezen </strong>
+                        <a href="https://nl.wikipedia.org/wiki/Hypertrichose"> <strong>wikipedia over weerwolvensyndroom </strong>
                     </div>
                 </div>
                 
