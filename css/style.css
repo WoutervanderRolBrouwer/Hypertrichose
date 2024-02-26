@@ -44,7 +44,7 @@ li a:hover {
   border-bottom: 1px solid;
   border-left: 1px solid;
   border-right: 1px solid;
-  width: 40%;
+  width: 54%;
   padding: 10px;
   margin: auto;
 }
@@ -112,6 +112,25 @@ h1 {
 #myBtn:hover {
   background: #ddd;
   color: black;
+}
+
+.banner {
+  padding: 60px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  inset: auto 50% auto 50%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*# sourceMappingURL=style.css.map */
