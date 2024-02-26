@@ -11,21 +11,21 @@
 <body>
 
 <div class="navbar-main">
-    <img class="logo" src="../img/logo.png" alt="" width="90" height="90">
+    <img class="logo" src="../img/logo.png" alt="" width="90" height="85"> 
     <div class="hamburger-menu">
         <div class="rectangle">
             <ul class="navbar" id="nav">
-                <li><a class="home" href="index.php" id="home">HOME</a></li>
-                <li><a class="information" href="infopage/information.php">INFORMATION</a></li>
-                <li><a class="form" href="form/form.php">FORM</a></li>
-                <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
-                <li><a class="behandelingen" href="behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
+                <li><a class="home" href="../index.php" id="home">HOME</a></li>
+                <li><a class="information" href="../infopage/information.php">INFORMATION</a></li>
+                <li><a class="form" href="../form/form.php">FORM</a></li>
+                <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
+                <li><a class="behandelingen" href="../behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
             </ul>
         </div>
     </div>
 </div>
 <style>
-    <?php include '../css/style.scss'; ?>
+    <?php include '../scss/style.scss'; ?>
 </style>
         
 
@@ -38,7 +38,7 @@
       <div class="container">
         <h2>Jeroen Helvoet</h2>
         <p class="title">Arts-assistent dermatologie</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>één seconden kan een leven en een wereld redden</p>
         <p>Jeroenmolenschoot@outlook.com</p>
         <p><button class="button">Contact</button></p>
       </div>
@@ -50,7 +50,7 @@
       <img src="Gregor van der Made.jpeg" alt="Mike" style="width:50%">
       <div class="container">
         <h2>dr. Rinke Borgonjen</h2>
-        <p class="title">Cosmetisch dermatoloog  |  Dermatologie  |  Dermatoloog</p>
+        <p class="title">Cosmetisch dermatoloog</p>
         <p>Onbevooroordeelde observatie voor optimale zorg</p>
         <p>Gregorvandermade@outlook.com</p>
         <p><button class="button">Contact</button></p>
@@ -60,10 +60,10 @@
 
   <div class="profile">
     <div class="card">
-      <img src="Wilma Tuk.jpeg" alt="Marleen" style="width:50%">
+      <img src="Wilma Tuk.jpeg" alt="Marleen" style="width:45%">
       <div class="container">
         <h2>Mevr. drs. Marleen Baars</h2>
-        <p class="title">Dermatologie  |  Dermatoloog  |  miraDry behandelaar</p>
+        <p class="title">miraDry behandelaar</p>
         <p>Het is belangrijk om letterlijk lekker in je vel te zitten.</p>
         <p>MarleenBaars@example.com</p>
         <p><button class="button">Contact</button></p>
