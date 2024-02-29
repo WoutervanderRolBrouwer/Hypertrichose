@@ -1,84 +1,27 @@
-#nav ul .navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#nav li {
-  float: center;
-
-}
-
-#nav a {
-  display: block;
-  padding: 8px;
-
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-li {
-  float: left;
-}
-
-li a:not(.behandelingen, .logo) {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin: auto;
-  border-right: 1px solid;
-}
-
+@use "navbar";
 /*Dit houd in dat de navbar knop de kleur #111 (zwart) word wanneer je er met je muis overheen gaat */
-li a:hover {
-  background-color: #c0c0c0;
-}
-
-.rectangle:not(.img) {
-  border-bottom: 1px solid;
-  border-left: 1px solid;
-  border-right: 1px solid;
-  width: 54%;
-  padding: 10px;
-  margin: auto;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: black;
-  text-decoration: none;
-}
-
-.navbar-main {
-  display: flex;
-  align-items: center;
-}
 
 .hamburger-menu {
   flex: 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Corben', Georgia, Times, serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Corben", Georgia, Times, serif;
 }
-p, div {
-  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+p,
+div {
+  font-family: "Nobile", Helvetica, Arial, sans-serif;
 }
 
-h1 { 
+h1 {
   text-shadow: 1px 1px 1px #ccc;
 }
-.div { 
+.div {
   box-shadow: 0 0 1em 1em #ccc;
 }
 
@@ -90,46 +33,45 @@ h1 {
   min-width: 100%;
 }
 
-  .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-  }
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
 
-  #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
 
-  #myBtn:hover {
-    background: #ddd;
-    color: black;
-  }
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
 
-  .banner {
-    padding: 60px;
-    text-align: center;
-  }
+.banner {
+  padding: 60px;
+  text-align: center;
+}
 
-  .column {
-    float: left;
-    width: 25%;
-    padding: 5px;
-    inset: auto 50% auto 50%;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  inset: auto 50% auto 50%;
+}
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

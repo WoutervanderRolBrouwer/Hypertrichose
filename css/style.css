@@ -1,76 +1,48 @@
-#nav ul .navbar {
-  list-style-type: none;
-  margin: 0;
+header nav {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  z-index: 3;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
   padding: 0;
+  margin: 0.5rem auto 0.5rem auto;
+  background-color: #fff;
 }
-
-#nav li {
-  float: center;
+header nav ul li {
+  display: flex;
+  position: relative;
 }
-
-#nav a {
-  display: block;
-  padding: 8px;
+header nav ul li a {
+  display: inline-block;
+  padding: 1rem;
+  color: #000;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-li {
-  float: left;
-}
-
-li a:not(.behandelingen, .logo) {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 14px 16px;
+header nav.main-menu ul > li > a {
   text-decoration: none;
-  margin: auto;
-  border-right: 1px solid;
 }
-
-/*Dit houd in dat de navbar knop de kleur #111 (zwart) word wanneer je er met je muis overheen gaat */
-li a:hover {
+header nav.main-menu ul > li > a:hover {
   background-color: #c0c0c0;
 }
 
-.rectangle:not(.img) {
-  border-bottom: 1px solid;
-  border-left: 1px solid;
-  border-right: 1px solid;
-  width: 54%;
-  padding: 10px;
-  margin: auto;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: black;
-  text-decoration: none;
-}
-
-.navbar-main {
-  display: flex;
-  align-items: center;
-}
-
+/*Dit houd in dat de navbar knop de kleur #111 (zwart) word wanneer je er met je muis overheen gaat */
 .hamburger-menu {
   flex: 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Corben", Georgia, Times, serif;
 }
 
-p, div {
+p,
+div {
   font-family: "Nobile", Helvetica, Arial, sans-serif;
 }
 
