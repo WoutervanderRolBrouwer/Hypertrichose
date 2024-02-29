@@ -1,0 +1,20 @@
+body {
+    background-color: #f2f2f2; /* Lichtgrijze achtergrondkleur */
+    color: #000; /* Zwarte tekstkleur */
+    font-family: Arial, sans-serif; /* Voorbeeld lettertype */
+    padding: 20px;
+}
+.result {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff; /* Witte achtergrondkleur */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schaduw effect */
+}
+.correct-answer {
+    color: green;
+}
+.incorrect-answer {
+    color: red;
+}

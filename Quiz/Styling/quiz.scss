@@ -1,0 +1,50 @@
+// Define variables for colors and other common styles
+$primary-color: #007bff; // Voorbeeld hoofdkleur
+$font-family: Arial, sans-serif; // Voorbeeld lettertype
+$background-color: #f2f2f2; // Lichtgrijze achtergrondkleur
+$text-color: #000; // Zwarte tekstkleur
+
+// Style the header
+.header {
+    text-align: center;
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+// Style the body
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $font-family;
+}
+
+// Style the form
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// Style the questions
+p {
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-bottom: 5px;
+}
+
+// Style the submit button
+input[type="submit"] {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: $font-family;
+}
+
+// Add additional styles as needed
