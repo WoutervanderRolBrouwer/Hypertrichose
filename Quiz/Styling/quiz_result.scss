@@ -1,0 +1,37 @@
+// quiz_result.scss
+
+// Define variables for colors and other common styles
+$primary-color: #007bff; // Voorbeeld hoofdkleur
+$font-family: Arial, sans-serif; // Voorbeeld lettertype
+$background-color: #f2f2f2; // Lichtgrijze achtergrondkleur
+$text-color: #000; // Zwarte tekstkleur
+$correct-answer-color: green; // Kleur voor correcte antwoorden
+$incorrect-answer-color: red; // Kleur voor foute antwoorden
+
+// Style the body
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $font-family;
+    padding: 20px;
+}
+
+// Style the result container
+.result {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff; // Witte achtergrondkleur
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Schaduw effect
+}
+
+// Style correct answers
+.correct-answer {
+    color: $correct-answer-color;
+}
+
+// Style incorrect answers
+.incorrect-answer {
+    color: $incorrect-answer-color;
+}
