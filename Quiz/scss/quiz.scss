@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+#page-wrap {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#quiz {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+label {
+    cursor: pointer;
+    display: block;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+}
+
+input[type="radio"] {
+    display: none;
+
+    &:checked + label::after {
+        content: '\2713';
+        font-size: 14px;
+        color: #007bff;
+        position: absolute;
+        top: 0;
+        left: 4px;
+    }
+}
+
+.submitbtn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+// Extra stijlen voor quiz resultaat
+.result {
+    text-align: center;
+    margin-top: 50px;
+
+    #results {
+        font-size: 24px;
+        color: #333;
+    }
+}
+
+#correct-answers {
+    margin-top: 20px;
+
+    p {
+        color: #28a745; // Groen voor correcte antwoorden
+        margin-bottom: 5px;
+    }
+}
+
+// Stijlen voor foutieve antwoorden
+#incorrect-answers {
+    margin-top: 20px;
+
+    p {
+        color: #dc3545; // Rood voor foutieve antwoorden
+        margin-bottom: 5px;
+    }
+}
