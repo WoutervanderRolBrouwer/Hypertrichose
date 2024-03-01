@@ -147,7 +147,7 @@
                 
                 <!-- Om meer te weten over hypertrichose heb ik hier de link naar de Quiz pagina. --->
                 <div class="col">
-                <a href="../Quiz/quiz.php"><button type="button" class="btn btn-primary">Quiz</button></a>
+                <a href="../Quiz/Introduction-quiz.php"><button type="button" class="btn btn-primary">Quiz</button></a>
                 </div>
 
             </section>
