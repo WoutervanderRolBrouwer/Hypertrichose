@@ -1,188 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="./assets/styles/styles.css" /> -->
-    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
-  </head>
-  <body class="h-screen bg-blue-50">
-    <main class="p-5 bg-light-blue">
-      <div class="flex justify-center items-start my-2">
-        <div class="w-full sm:w-10/12 md:w-1/2 my-1">
-          <h2 class="text-xl font-semibold text-vnet-blue mb-2">FAQ - Hypertrichose</h2>
-          <ul class="flex flex-col">
-            <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
-              <h2
-                @click="handleClick()"
-                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-              >
-                <span>Hoe krijg ik Hypertrichose?</span>
-                <svg
-                  :class="handleRotate()"
-                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    [x-cloak] {
+        display: none !important;
+    }
+</style>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <nav class="main-menu">
+            <img src="logo/logo.svg" height="90px" alt="">
+            <ul >
+                    <li><a class="home" href="index.php" id="home">HOME</a></li>
+                    <li><a class="information" href="infopage/information.php">INFORMATION</a></li>
+                    <li><a class="form" href="form/form.php">FORM</a></li>
+                    <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
+                    <li><a class="behandelingen" href="behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
+                    <li><a class="FAQ" href="FAQ/FAQ.php">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="h-screen max-w-5xl px-2 py-3 mx-auto mt-32 tracking-wide md:px-4 md:mt-44">
+ <!--title-->
+    <div class="flex justify-center text-3xl">Veel Gestelde Vragen</div>
+ 
+    <div class="grid gap-3 py-8 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-2">
+        <div class="space-y-3">
+        
+        <!--Link boven-->
+        <div x-data="accordion(1)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">Hoe krijg ik Hypertrichose?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                 </svg>
-              </h2>
-              <div
-                x-ref="tab"
-                :style="handleToggle()"
-                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
-              >
-                <p class="p-3 text-gray-900">
-                 Je kan het krijgen via geboorte of door medicatie later
-                </p>
-              </div>
-            </li>
-            <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
-              <h2
-                @click="handleClick()"
-                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-              >
-                <span>Hoe krijg ik Hypertrichose bij geboorte?</span>
-                <svg
-                  :class="handleRotate()"
-                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-                </svg>
-              </h2>
-              <div
-                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
-                x-ref="tab"
-                :style="handleToggle()"
-              >
-                <p class="p-3 text-gray-900">
-                  Bij de geboorte is het tezien als er meer haar op uw gezicht zit dan het normaal hoort te zijn.
-                </p>
-              </div>
-            </li>
-            <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
-              <h2
-                @click="handleClick()"
-                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-              >
-                <span>Hoe kan ik hypertrichose later krijgen?</span>
-                <svg
-                  :class="handleRotate()"
-                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-                </svg>
-              </h2>
-              <div
-                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
-                x-ref="tab"
-                :style="handleToggle()"
-              >
-                <p class="p-3 text-gray-900">
-                    U kunt het later krijgen door bepaalde medicatie of door drugs.
-                </p>
-              </div>
-            </li>
-            <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
-              <h2
-                @click="handleClick()"
-                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-              >
-                <span>Is hypertrichose doodelijk?</span>
-                <svg
-                  :class="handleRotate()"
-                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-                </svg>
-              </h2>
-              <div
-                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
-                x-ref="tab"
-                :style="handleToggle()"
-              >
-                <p class="p-3 text-gray-900">
-                  Hypertrichose is niet dodelijk het is alleen meer haargroei op plekken waar het normaal minder is.
-                </p>
-              </div>
-            </li>
-            <li class="bg-white my-2 shadow-lg" x-data="accordion(5)">
-              <h2
-                @click="handleClick()"
-                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-              >
-                <span>Waar komt hypertrichose vooral voor?</span>
-                <svg
-                  :class="handleRotate()"
-                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-                </svg>
-              </h2>
-              <div
-                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
-                x-ref="tab"
-                :style="handleToggle()"
-              >
-                <p class="p-3 text-gray-900">
-                  Er is niet een bepaalde plek waar het voorkomt want het komt vooral door DNA van de ouders.
-                </p>
-              </div>
-            </li>
-            <li class="bg-white my-2 shadow-lg" x-data="accordion(6)">
-              <h2
-                @click="handleClick()"
-                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-              >
-                <span>Waar is hypertrichose als eerst gezien?</span>
-                <svg
-                  :class="handleRotate()"
-                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-                </svg>
-              </h2>
-              <div
-                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
-                x-ref="tab"
-                :style="handleToggle()"
-              >
-                <p class="p-3 text-gray-900">
-                  De eerste keer dat hypertrichose was gezien waren op de canarische eilanden bij de familie van Petrus Gonsalvus
-                </p>
-              </div>
-            </li>
-          </ul>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                Je kan het krijgen via geboorte of door medicatie later </div>
+            </div>
         </div>
-      </div>
-    </main>
-  </body>
-  <script>
-    document.addEventListener('alpine:init', () => {
-      Alpine.store('accordion', {
-        tab: 0
-      });
+       
+
+        <!--Links midden-->
+        <div x-data="accordion(2)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">Hoe krijg ik Hypertrichose bij geboorte?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                Bij de geboorte is het tezien als er meer haar op uw gezicht zit dan het normaal hoort te zijn. </div>
+            </div>
+        </div>
+
       
-      Alpine.data('accordion', (idx) => ({
-        init() {
-          this.idx = idx;
-        },
-        idx: -1,
-        handleClick() {
-          this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
-        },
-        handleRotate() {
-          return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
-        },
-        handleToggle() {
-          return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
-        }
-      }));
-    })
-  </script>
+
+        <!--Link onder-->
+        <div x-data="accordion(3)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">Hoe kan ik hypertrichose later krijgen?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                U kunt het later krijgen door bepaalde medicatie of door drugs.
+            </div>
+            </div>
+        </div>
+       
+        </div>
+
+     
+
+        <div class="space-y-3">
+       
+        <!-- Recht boven-->
+        <div x-data="accordion(4)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">Is hypertrichose doodelijk?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                Hypertrichose is niet dodelijk het is alleen meer haargroei op plekken waar het normaal minder is.
+            </div>
+            </div>
+        </div>
+     
+
+        <!-- Rechts Midden -->
+        <div x-data="accordion(5)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">Waar komt hypertrichose vooral voor?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                Er is niet een bepaalde plek waar het voorkomt want het komt vooral door DNA van de ouders. </div>
+            </div>
+        </div>
+
+        
+        <!-- rechts Onder-->
+        <div x-data="accordion(6)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">Waar is hypertrichose als eerst gezien?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                De eerste keer dat hypertrichose was gezien waren op de canarische eilanden bij de familie van Petrus Gonsalvus
+            </div>
+            </div>
+        </div>
+       
+        </div>
+    </div>
+    
+    </div>
+   
+
+    <script>
+        // Faq
+        document.addEventListener("alpine:init", () => {
+        Alpine.store("accordion", {
+            tab: 0
+        });
+
+        Alpine.data("accordion", (idx) => ({
+            init() {
+            this.idx = idx;
+            },
+            idx: -1,
+            handleClick() {
+            this.$store.accordion.tab =
+                this.$store.accordion.tab === this.idx ? 0 : this.idx;
+            },
+            handleRotate() {
+            return this.$store.accordion.tab === this.idx ? "-rotate-180" : "";
+            },
+            handleToggle() {
+            return this.$store.accordion.tab === this.idx
+                ? `max-height: ${this.$refs.tab.scrollHeight}px`
+                : "";
+            }
+        }));
+        });
+        //  end faq
+
+        </script>
+</body>
 </html>
