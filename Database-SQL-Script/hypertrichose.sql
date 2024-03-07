@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 07 mrt 2024 om 10:00
--- Serverversie: 8.0.31
--- PHP-versie: 8.0.26
+-- Gegenereerd op: 07 mrt 2024 om 11:21
+-- Serverversie: 8.2.0
+-- PHP-versie: 8.2.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,8 +20,23 @@ SET time_zone = "+00:00";
 --
 -- Database: `hypertrichose`
 --
-CREATE DATABASE IF NOT EXISTS `hypertrichose` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `hypertrichose`;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `quiz_results`
+--
+
+DROP TABLE IF EXISTS `quiz_results`;
+CREATE TABLE IF NOT EXISTS `quiz_results` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `quiz_date` datetime NOT NULL,
+  `correct_answers` int NOT NULL DEFAULT '0',
+  `incorrect_answers` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
