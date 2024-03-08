@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypertrichose</title>
     <link rel="stylesheet" href="../Quiz/css/quiz.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <div id="page-wrap">
@@ -12,224 +14,123 @@
         
         <form action="quiz_result.php" method="post" id="quiz">
 
-        <ol>
-            <li>
-                <h3>Vraag 1: Wat is een ander woord voor het weerwolvensyndroom?</h3>
-            <div>
-                <input type="radio" name= "question1" id="question1-A" value="A"/>
-                <label for="question1-A">A) Hypertrichose</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question1" id="question1-B" value="B"/>
-                <label for="question1-B">B) Vitiligo</label>
-            </div>
-            <div>
-                <input type="radio" name= "question1" id="question1-C" value="C"/>
-                <label for="question1-C">C) Albinisme </label>
-            </div>
-            <div>
-                <input type="radio" name= "question1" id="question1-D" value="D"/>
-                <label for="question1-D">D) Dermatillomanie</label>
-            </div>
+        <!-- Vraag 1 -->
+    <p>Wat is een ander woord voor het weerwolvensyndroom?</p>
+    <input type="radio" name="question1" id="question1-A" value="A" required>
+    <label for="question1-A">A. Hypertrichose</label><br>
+    <input type="radio" name="question1" id="question1-B" value="B" required>
+    <label for="question1-B">B. Lycanthropie</label><br>
+    <input type="radio" name="question1" id="question1-C" value="C" required>
+    <label for="question1-C">C. Acromegalie</label><br>
+    <input type="radio" name="question1" id="question1-D" value="D" required>
+    <label for="question1-D">D. Porfyrie</label><br>
 
-            </li>
+    <!-- Vraag 2 -->
+    <p>Wat is de belangrijkste oorzaak van het weerwolvensyndroom?</p>
+    <input type="radio" name="question2" id="question2-A" value="A" required>
+    <label for="question2-A">A. Genetische mutaties</label><br>
+    <input type="radio" name="question2" id="question2-B" value="B" required>
+    <label for="question2-B">B. Virusinfectie</label><br>
+    <input type="radio" name="question2" id="question2-C" value="C" required>
+    <label for="question2-C">C. Bijwerking van medicatie</label><br>
+    <input type="radio" name="question2" id="question2-D" value="D" required>
+    <label for="question2-D">D. Blootstelling aan straling</label><br>
 
-            <li>
+    <!-- Vraag 3 -->
+    <p>Welk lichaamsdeel is het meest getroffen door overmatige haargroei bij het weerwolvensyndroom?</p>
+    <input type="radio" name="question3" id="question3-A" value="A" required>
+    <label for="question3-A">A. Rug</label><br>
+    <input type="radio" name="question3" id="question3-B" value="B" required>
+    <label for="question3-B">B. Gezicht</label><br>
+    <input type="radio" name="question3" id="question3-C" value="C" required>
+    <label for="question3-C">C. Armen</label><br>
+    <input type="radio" name="question3" id="question3-D" value="D" required>
+    <label for="question3-D">D. Borst</label><br>
 
-            <h3>Vraag 2: Wat veroorzaakt het weerwolvensyndroom?</h3>
-            <div>
-                <input type="radio" name= "question2" id="question2-A" value="A"/>
-                <label for="question2-A">A) Bacteriële infectie</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question2" id="question2-B" value="B"/>
-                <label for="question2-B">B) Genetische mutatie</label>
-            </div>
-            <div>
-                <input type="radio" name= "question2" id="question2-C" value="C"/>
-                <label for="question2-C">C) Allergische reactie</label>
-            </div>
-            <div>
-                <input type="radio" name= "question2" id="question2-D" value="D"/>
-                <label for="question2-D">D) Hormonale onbalans</label>
-            </div>
-            </li>
+    <!-- Vraag 4 -->
+    <p>Welk hormoon is vaak verantwoordelijk voor het veroorzaken van het weerwolvensyndroom?</p>
+    <input type="radio" name="question4" id="question4-A" value="A" required>
+    <label for="question4-A">A. Testosteron</label><br>
+    <input type="radio" name="question4" id="question4-B" value="B" required>
+    <label for="question4-B">B. Oestrogeen</label><br>
+    <input type="radio" name="question4" id="question4-C" value="C" required>
+    <label for="question4-C">C. Cortisol</label><br>
+    <input type="radio" name="question4" id="question4-D" value="D" required>
+    <label for="question4-D">D. Melatonine</label><br>
 
+    <!-- Vraag 5 -->
+    <p>Hoe wordt het weerwolvensyndroom vaak behandeld?</p>
+    <input type="radio" name="question5" id="question5-A" value="A" required>
+    <label for="question5-A">A. Laserontharing</label><br>
+    <input type="radio" name="question5" id="question5-B" value="B" required>
+    <label for="question5-B">B. Hormoontherapie</label><br>
+    <input type="radio" name="question5" id="question5-C" value="C" required>
+    <label for="question5-C">C. Chemotherapie</label><br>
+    <input type="radio" name="question5" id="question5-D" value="D" required>
+    <label for="question5-D">D. Chirurgische ingreep</label><br>
 
-            <li>
-            
-            <h3>Vraag 3: Welk type weerwolvensyndroom wordt gekenmerkt door overmatige haargroei over het hele lichaam?</h3>
-            <div>
-                <input type="radio" name= "question3" id="question3-A" value="A"/>
-                <label for="question3-A">A)Congenitale hypertrichose</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question3" id="question3-B" value="B"/>
-                <label for="question3-B">B) Acquired hypertrichosis</label>
-            </div>
-            <div>
-                <input type="radio" name= "question3" id="question3-C" value="C"/>
-                <label for="question3-C">C) Hirsutism</label>
-            </div>
-            <div>
-                <input type="radio" name= "question3" id="question3-D" value="D"/>
-                <label for="question3-D">D) Trichotillomanie</label>
-            </div>
+    <!-- Vraag 6 -->
+    <p>Wat is een mogelijke complicatie van het weerwolvensyndroom?</p>
+    <input type="radio" name="question6" id="question6-A" value="A" required>
+    <label for="question6-A">A. Hoge bloeddruk</label><br>
+    <input type="radio" name="question6" id="question6-B" value="B" required>
+    <label for="question6-B">B. Diabetes</label><br>
+    <input type="radio" name="question6" id="question6-C" value="C" required>
+    <label for="question6-C">C. Depressie</label><br>
+    <input type="radio" name="question6" id="question6-D" value="D" required>
+    <label for="question6-D">D. Infecties van de huid</label><br>
 
-            </li>
+    <!-- Vraag 7 -->
+    <p>Welk percentage van de wereldbevolking wordt geschat dat lijdt aan het weerwolvensyndroom?</p>
+    <input type="radio" name="question7" id="question7-A" value="A" required>
+    <label for="question7-A">A. Minder dan 1%</label><br>
+    <input type="radio" name="question7" id="question7-B" value="B" required>
+    <label for="question7-B">B. Ongeveer 5%</label><br>
+    <input type="radio" name="question7" id="question7-C" value="C" required>
+    <label for="question7-C">C. Ongeveer 10%</label><br>
+    <input type="radio" name="question7" id="question7-D" value="D" required>
+    <label for="question7-D">D. Minder dan 0,1%</label><br>
 
-            <li>
-            <h3>Vraag 4: Welk orgaan wordt vaak aangetast door de symptomen van het weerwolvensyndroom?</h3>
-            <div>
-                <input type="radio" name= "question4" id="question4-A" value="A"/>
-                <label for="question4-A">A) Nieren</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question4" id="question4-B" value="B"/>
-                <label for="question4-B">B) Lever</label>
-            </div>
-            <div>
-                <input type="radio" name= "question4" id="question4-C" value="C"/>
-                <label for="question4-C">C) Hart</label>
-            </div>
-            <div>
-                <input type="radio" name= "question4" id="question4-D" value="D"/>
-                <label for="question4-D">D) Huid</label>
-            </div>
+    <!-- Vraag 8 -->
+    <p>Welke van de volgende termen verwijst naar een mildere vorm van het weerwolvensyndroom?</p>
+    <input type="radio" name="question8" id="question8-A" value="A" required>
+    <label for="question8-A">A. Hypertrichosis lanuginosa</label><br>
+    <input type="radio" name="question8" id="question8-B" value="B" required>
+    <label for="question8-B">B. Vellushaar</label><br>
+    <input type="radio" name="question8" id="question8-C" value="C" required>
+    <label for="question8-C">C. Terminalhaar</label><br>
+    <input type="radio" name="question8" id="question8-D" value="D" required>
+    <label for="question8-D">D. Hirsutisme</label><br>
 
-            </li>
+    <!-- Vraag 9 -->
+    <p>Welk dier wordt vaak geassocieerd met het weerwolvensyndroom vanwege de gelijkenis in uiterlijk?</p>
+    <input type="radio" name="question9" id="question9-A" value="A" required>
+    <label for="question9-A">A. Beer</label><br>
+    <input type="radio" name="question9" id="question9-B" value="B" required>
+    <label for="question9-B">B. Aap</label><br>
+    <input type="radio" name="question9" id="question9-C" value="C" required>
+    <label for="question9-C">C. Leeuw</label><br>
+    <input type="radio" name="question9" id="question9-D" value="D" required>
+    <label for="question9-D">D. Wolf</label><br>
 
-            <li>
-                <h3>Vraag 5: Welke van de volgende is een mogelijke oorzaak van het verworven weerwolvensyndroom?</h3>
-            <div>
-                <input type="radio" name= "question5" id="question5-A" value="A"/>
-                <label for="question5-A">A) Genetische mutatie</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question5" id="question5-B" value="B"/>
-                <label for="question5-B">B) Medicijnen</label>
-            </div>
-            <div>
-                <input type="radio" name= "question5" id="question5-C" value="C"/>
-                <label for="question5-C">C) Allergieën</label>
-            </div>
-            <div>
-                <input type="radio" name= "question5" id="question5-D" value="D"/>
-                <label for="question5-D">D) Gebrek aan hygiëne</label>
-            </div>
-
-
-            </li>
-            <li>
-                <h3>Vraag 6: Hoe wordt het weerwolvensyndroom genoemd wanneer het alleen op bepaalde delen van het lichaam voorkomt?</h3>
-
-            <div>
-                <input type="radio" name= "question6" id="question6-A" value="A"/>
-                <label for="question6-A">A) Localized hypertrichosis</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question6" id="question6-B" value="B"/>
-                <label for="question6-B">B) Generalized hypertrichosis</label>
-            </div>
-            <div>
-                <input type="radio" name= "question6" id="question6-C" value="C"/>
-                <label for="question6-C">C) Acquired hypertrichosis</label>
-            </div>
-            <div>
-                <input type="radio" name= "question6" id="question6-D" value="D"/>
-                <label for="question6-D">D) Congenital hypertrichosis</label>
-            </div>
-
-            </li>
-            <li>
-                <h3>Vraag 7: Welk van de volgende syndromen wordt soms verward met het weerwolvensyndroom vanwege overmatige haargroei?</h3>
-            <div>
-                <input type="radio" name= "question7" id="question7-A" value="A"/>
-                <label for="question7-A">A) Cushing-syndroom</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question7" id="question7-B" value="B"/>
-                <label for="question7-B">B) Downsyndroom</label>
-            </div>
-            <div>
-                <input type="radio" name= "question7" id="question7-C" value="C"/>
-                <label for="question7-C">C) Turner-syndroom</label>
-            </div>
-            <div>
-                <input type="radio" name= "question7" id="question7-D" value="D"/>
-                <label for="question7-D">D) Marfansyndroom</label>
-            </div>
-
-            </li>
-
-            <li>
-
-            <h3>Vraag 8: Welke van de volgende is GEEN methode voor de behandeling van het weerwolvensyndroom?</h3>
-            <div>
-                <input type="radio" name= "question8" id="question8-A" value="A"/>
-                <label for="question8-A">A) Laserontharing</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question8" id="question8-B" value="B"/>
-                <label for="question8-B">B) Hormoontherapie</label>
-            </div>
-            <div>
-                <input type="radio" name= "question8" id="question8-C" value="C"/>
-                <label for="question8-C">C) Chemotherapie</label>
-            </div>
-            <div>
-                <input type="radio" name= "question8" id="question8-D" value="D"/>
-                <label for="question8-D">D) Elektrolyse</label>
-            </div>
-
-            </li>
-            <li>
-
-            <h3>Vraag 9: Welk hormoon speelt een belangrijke rol bij de regulering van haargroei en kan worden betrokken bij het weerwolvensyndroom?</h3>
-            <div>
-                <input type="radio" name= "question9" id="question9-A" value="A"/>
-                <label for="question9-A">A) Oestrogeen</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question9" id="question9-B" value="B"/>
-                <label for="question9-B">B) Testosteron</label>
-            </div>
-            <div>
-                <input type="radio" name= "question9" id="question9-C" value="C"/>
-                <label for="question9-C">C) Insuline</label>
-            </div>
-            <div>
-                <input type="radio" name= "question9" id="question9-D" value="D"/>
-                <label for="question9-D">D) Cortisol</label>
-            </div>
-
-
-            </li>
-
-            <li>
-                <h3>Vraag 10: Welk deel van het lichaam is vaak het meest getroffen door overmatige haargroei bij het weerwolvensyndroom?</h3>
-            <div>
-                <input type="radio" name= "question10" id="question10-A" value="A"/>
-                <label for="question10-A">A) Rug</label> 
-            </div>
-            <div>
-                <input type="radio" name= "question10" id="question10-B" value="B"/>
-                <label for="question10-B">B) Armen</label>
-            </div>
-            <div>
-                <input type="radio" name= "question10" id="question10-C" value="C"/>
-                <label for="question10-C">C) Gezicht</label>
-            </div>
-            <div>
-                <input type="radio" name= "question10" id="question10-D" value="D"/>
-                <label for="question10-D">D) Buik</label>
-            </div>
-            </li>
-        </ol>
+    <!-- Vraag 10 -->
+    <p>Wat is de meest voorkomende vorm van het weerwolvensyndroom?</p>
+    <input type="radio" name="question10" id="question10-A" value="A" required>
+    <label for="question10-A">A. Congenitale vorm</label><br>
+    <input type="radio" name="question10" id="question10-B" value="B" required>
+    <label for="question10-B">B. Verworven vorm</label><br>
+    <input type="radio" name="question10" id="question10-C" value="C" required>
+    <label for="question10-C">C. Idiopathische vorm</label><br>
+    <input type="radio" name="question10" id="question10-D" value="D" required>
+    <label for="question10-D">D. Secundaire vorm</label><br>
+    
 
         <input type="submit" value="Afronden" class="submitbtn" />
+
+        <script src="../Quiz/js/script.js"></script>
 
         </form>
         </div>
     </div>
 </html>
+

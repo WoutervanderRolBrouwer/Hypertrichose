@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 <div class="banner">
@@ -22,11 +24,6 @@
                 <img src="../Quiz\img\Weerwolven-QuizBanner.jpg" alt="">
             <button type="submit" class="submitbtn"><a href="..\Quiz\quiz.php">Beginnen</a></button>
 
-            </div>
-
-            
-
-          
-            
+</div>    
 
 </html>

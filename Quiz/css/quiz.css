@@ -64,7 +64,7 @@ input[type=radio] {
 input[type=radio]:checked + label::after {
   content: "✓";
   font-size: 14px;
-  color: #007bff;
+  color: #28a745;
   position: absolute;
   top: 0;
   left: 4px;
