@@ -1,0 +1,105 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.col,
+[class^="col-"],
+[class*=" col-"] {
+  padding: 0.5rem;
+  flex: 1;
+
+  .inner {
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+  }
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  img {
+    max-width: 100%; /* Zorg ervoor dat de afbeelding niet breder wordt dan de container */
+  }
+
+  strong {
+    margin-bottom: 0.5rem; /* Ruimte onder de sterke tag */
+  }
+
+  p {
+    margin-bottom: 1rem; /* Ruimte onder de alinea's */
+  }
+}
+
+
