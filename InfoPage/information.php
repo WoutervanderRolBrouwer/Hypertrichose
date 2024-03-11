@@ -1,53 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hypertrichose Information</title>
-    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
-    <link rel="stylesheet"  href="../css/style.css" />
-    <link rel="stylesheet" href="Styling\info.css" />
-</head>
-
-<body>
-<div class="navbar-main">
-    <img class="logo" src="../img/logo.png" alt="" width="90" height="85"> 
-    <div class="hamburger-menu">
-        <div class="rectangle">
-            <ul class="navbar" id="nav">
-                <li><a class="home" href="../index.php" id="home">HOME</a></li>
-                <li><a class="information" href="../infopage/information.php">INFORMATION</a></li>
-                <li><a class="form" href="../form/form.php">FORM</a></li>
-                <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
-                <li><a class="behandelingen" href="../behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<main>
-<img src="../img/harigmeisje.png" alt="" class="banner" width="100%" height="525">
-        <main class="container">
-            <section class="row">
-            
-
-
-                <section class="row">
-
-
-                    <div class="col-4">
-                        <div class="inner">
-                            <img
-                                src="https://explorebiotech.com/ezoimgfmt/i0.wp.com/explorebiotech.com/wp-content/uploads/2016/11/hypertrichosis.jpg?resize=768%2C512&ssl=1&ezimgfmt=ng:webp/ngcb1">
-
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="inner">
-                            <strong>Wat is Hypertrichose</strong>
-                            <p>Hypertrichosis is wanneer er te veel haar op het lichaam groeit op plekken waar het
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="Styling/nicepage.css" media="screen">
+<link rel="stylesheet" href="Styling/information.css" media="screen">
+    <script class="u-script" type="text/javascript" src="Styling/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="Styling/js/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 6.5.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Page 1">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-grey-10 u-xl-mode" data-lang="en">
+    
+    <header>
+      <nav class="main-menu">
+          <img src="../logo/logo.svg" height="90px" alt="">
+          <ul >
+                  <li><a class="home" href="index.php" id="home">HOME</a></li>
+                  <li><a class="information" href="infopage/information.php">INFORMATION</a></li>
+                  <li><a class="form" href="form/form.php">FORM</a></li>
+                  <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
+                  <li><a class="behandelingen" href="behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
+                  <li><a class="FAQ" href="FAQ/FAQ.php">FAQ</a></li>
+          </ul>
+      </nav>
+  </header>
+    
+    
+    <section class="u-clearfix u-section-1" id="sec-548d">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-align-center u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="768" data-image-height="512">
+                <div class="u-container-layout u-container-layout-1"></div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-white u-layout-cell-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h3 class="u-text u-text-default u-text-1">Wat is Hypertrichose</h3>
+                  <p class="u-align-center u-text u-text-default u-text-2">Hypertrichosis is wanneer er te veel haar op het lichaam groeit op plekken waar het
                                 normaal niet zoveel hoort te zijn.
                                 Dit kan gebeuren bij zowel jongens als meisjes. Het haar groeit meer dan wat normaal is
                                 voor iemands leeftijd, afkomst of geslacht.
@@ -57,25 +64,22 @@
                                 Het is belangrijk om te weten dat hypertrichosis anders is dan hirsutisme, waarbij
                                 vrouwen meer haar hebben volgens het patroon van mannen.
                                 (hypertrichosis betekend te veel haar dat groeit op je lichaam)</p>
-                            </p>
-
-                        </div>
-                    </div>
-
-
-                </section>
-
-
-
-
-                <section class="row">
-
-
-
-                    <div class="col">
-                        <div class="inner">
-                            <strong>Hoe onstaat hypertrichosis </strong>
-                            <p>Hypertrichosis kan ontstaan door verschillende manieren, maar we begrijpen nog niet alles
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-10 u-section-2" id="sec-5375">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-white u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <h3 class="u-text u-text-default u-text-1">Hoe onstaat hypertrichosis</h3>
+                  <h5 class="u-align-center u-text u-text-default u-text-2">Hypertrichosis kan ontstaan door verschillende manieren, maar we begrijpen nog niet alles
                                 over hoe dit precies gebeurt. Hier zijn een paar manieren waarop het kan gebeuren:
                                 Sommige hele dunne, lichte haartjes op ons lichaam kunnen veranderen in langere, dikkere
                                 en donkerder haren. Normaal gebeurt dit bijvoorbeeld in de oksels of privé plekken, en
@@ -84,32 +88,30 @@
                                 langer en dikker. En omdat er minder haren uitvallen, lijkt het alsof er meer haren zijn
                                 op een bepaald stukje van het lichaam.
                                 Het kan ook zijn dat er meer haarzakjes zijn op een bepaald deel van het lichaam. Dit
-                                kan ook leiden tot hypertrichosis, maar we weten nog niet precies hoe dit werkt.</p>
-
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="inner">
-                            <img src="https://dam.gesund.bund.de/assets/hypertrichose-medium.webp">
-
-                        </div>
-                    </div>
-
-                </section>
-
-                <div class="col-4">
-                    <div class="inner">
-                        <img src="https://healthjade.net/wp-content/uploads/2019/02/Hypertrichosis.jpg">
-
-                    </div>
+                                kan ook leiden tot hypertrichosis, maar we weten nog niet precies hoe dit werkt.</h5>
                 </div>
-
-                <div class="col">
-                    <div class="inner">
-                        <strong>hypertrichosis vorm</strong>
-                        <p>Haar groei kan optreden bij de geboorte maar ook bij moedervlekken ,rug en wenkbrauw .</p>
-                        <p>Dit kan ook gebeuren bij pasgeboren baby's, waarbij ze bedekt zijn met fijne haartjes genaamd
+              </div>
+              <div class="u-container-align-center u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="1024" data-image-height="576">
+                <div class="u-container-layout u-container-layout-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-10 u-section-3" id="sec-077e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-align-center u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="1500" data-image-height="936">
+                <div class="u-container-layout u-container-layout-1"></div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-white u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h3 class="u-text u-text-default u-text-1">hypertrichosis vorm</h3>
+                  <h5 class="u-align-center u-text u-text-default u-text-2">Haar groei kan optreden bij de geboorte maar ook bij moedervlekken ,rug en wenkbrauw .
+                        Dit kan ook gebeuren bij pasgeboren baby's, waarbij ze bedekt zijn met fijne haartjes genaamd
                             lanugo (lanugo zijn baby haartjes die je krijgt bij de geboorte).
                             Soms kan het ook wijzen op zeldzame syndromen zoals het syndroom van Cornelia de Lange of
                             het syndroom van Ambras, waarbij mensen over hun hele lichaam lanugo haar hebben, wat hen
@@ -118,42 +120,62 @@
                             kunnen sommige huidziekten hypertrichosis veroorzaken.
                             Dit kan later in het leven optreden door verschillende oorzaken, zoals hersenaandoeningen,
                             infecties, slechte voeding, spierziekten, schildklierproblemen, bepaalde syndromen, interne
-                            kanker, of door medicijnen zoals fenytoïne, cyclosporine en corticosteroïden</p>
-
+                            kanker, of door medicijnen zoals fenytoïne, cyclosporine en corticosteroïden</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-10 u-section-4" id="sec-355e">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-30">
+                <div class="u-layout-col">
+                  <div class="u-align-center u-container-style u-layout-cell u-size-60 u-white u-layout-cell-1">
+                    <div class="u-container-layout u-valign-top u-container-layout-1">
+                      <img class="u-expanded-width u-image u-image-default u-image-1" src="Styling/images/smallpic1.png" alt="" data-image-width="266" data-image-height="356">
+                      <h5 class="u-text u-text-default u-text-1">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" data-href="https://www.iqhealthcare.nl/nl/kennisbank/blog/het-weerwolfsyndroom-of-hypertrichose/">IQ healthcare website over hypertrichose</a>
+                      </h5>
                     </div>
+                  </div>
                 </div>
-
-
-            </section>
-
-            <section class="row">
-
-                <div class="col">
-                    <div class="inner">
-                        <img
-                            src="https://cdn.discordapp.com/attachments/1171422337468473365/1210290473605013545/Schermafbeelding_2024-02-22_191950.png?ex=65ea05d7&is=65d790d7&hm=20c10d8716523eb4b8629ab2e07fb0257de401615b12ceac2af41fb297d21a6a&">
-                        <a href="https://www.iqhealthcare.nl/nl/kennisbank/blog/het-weerwolfsyndroom-of-hypertrichose/"><strong>iq healthcare website over weerwolvensyndroom</strong>
-
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-col">
+                  <div class="u-align-center u-container-style u-layout-cell u-size-30 u-white u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+                      <img class="u-expanded-width u-image u-image-default u-image-2" src="Styling/images/smaalpic4.jpg" alt="" data-image-width="275" data-image-height="183">
+                      <h5 class="u-text u-text-default u-text-2">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" data-href="https://nl.wikipedia.org/wiki/Hypertrichose">Wikipedia over Hypertrichose</a>
+                      </h5>
                     </div>
-                </div>
-
-                <div class="col">
-                    <div class="inner">
-                        <img
-                            src="https://cdn.discordapp.com/attachments/1171422337468473365/1210290663896391790/image.png?ex=65ea0604&is=65d79104&hm=638daa553fbf24500a8cbee3687be851b9a89a8a893810f4ecbca9ee9ddbe0f4&">
-                        <a href="https://nl.wikipedia.org/wiki/Hypertrichose"> <strong>wikipedia over weerwolvensyndroom </strong>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-30 u-white u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-3">
+                      <img class="u-expanded-width u-image u-image-default u-image-3" src="Styling/images/smaalpic3.webp" alt="" data-image-width="1200" data-image-height="675">
+                      <h5 class="u-text u-text-default u-text-3">
+                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3" data-href="https://rarediseases.org/gard-rare-disease/x-linked-congenital-generalized-hypertrichosis/">Rarediseas website over hypertrichose</a>
+                      </h5>
                     </div>
+                  </div>
                 </div>
-                
-                <!-- Om meer te weten over hypertrichose heb ik hier de link naar de Quiz pagina. --->
-                <div class="col">
-                <a href="../Quiz/Introduction-quiz.php"><button type="button" class="btn btn-primary">Quiz</button></a>
-                </div>
-
-            </section>
-
-
-        </main>
-</body>
-
-</html>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+    
+    </section>
+  
+</body></html>
