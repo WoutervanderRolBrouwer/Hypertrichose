@@ -12,125 +12,122 @@
     <div id="page-wrap">
         <h1>Quiz</h1>
         
-        <form action="quiz_result.php" method="post" id="quiz">
+          <form action="../Quiz/quiz_result.php" method="post" id="quiz" >
 
         <!-- Vraag 1 -->
-    <p>Wat is een ander woord voor het weerwolvensyndroom?</p>
-    <input type="radio" name="question1" id="question1-A" value="A" required>
-    <label for="question1-A">A. Hypertrichose</label><br>
-    <input type="radio" name="question1" id="question1-B" value="B" required>
-    <label for="question1-B">B. Lycanthropie</label><br>
-    <input type="radio" name="question1" id="question1-C" value="C" required>
-    <label for="question1-C">C. Acromegalie</label><br>
-    <input type="radio" name="question1" id="question1-D" value="D" required>
-    <label for="question1-D">D. Porfyrie</label><br>
+        <div class="question-block">
+        <h3>Vraag 1: Wat is een ander woord voor het weerwolvensyndroom?</h3>
+        <input type="checkbox" name="question1" value="A">A. Hypertrichose<br>
+        <input type="checkbox" name="question1" value="B">B. Lycanthropie<br>
+        <input type="checkbox" name="question1" value="C">C. Acromegalie<br>
+        <input type="checkbox" name="question1" value="D">D. Porfyrie<br><br>
+        </div>
+   
 
-    <!-- Vraag 2 -->
-    <p>Wat is de belangrijkste oorzaak van het weerwolvensyndroom?</p>
-    <input type="radio" name="question2" id="question2-A" value="A" required>
-    <label for="question2-A">A. Genetische mutaties</label><br>
-    <input type="radio" name="question2" id="question2-B" value="B" required>
-    <label for="question2-B">B. Virusinfectie</label><br>
-    <input type="radio" name="question2" id="question2-C" value="C" required>
-    <label for="question2-C">C. Bijwerking van medicatie</label><br>
-    <input type="radio" name="question2" id="question2-D" value="D" required>
-    <label for="question2-D">D. Blootstelling aan straling</label><br>
+        <!-- Vraag 2 -->
+        <div class="question-block">
+        <h3>Vraag 2: Wat is de belangrijkste oorzaak van het weerwolvensyndroom?</h3>
+        <input type="checkbox" name="question2" value="A">A. Genetische mutaties<br>
+        <input type="checkbox" name="question2" value="B">B. Virusinfectie<br>
+        <input type="checkbox" name="question2" value="C">C. Bijwerking van medicatie<br>
+        <input type="checkbox" name="question2" value="D">D. Blootstelling aan straling<br><br>
+        </div>
 
-    <!-- Vraag 3 -->
-    <p>Welk lichaamsdeel is het meest getroffen door overmatige haargroei bij het weerwolvensyndroom?</p>
-    <input type="radio" name="question3" id="question3-A" value="A" required>
-    <label for="question3-A">A. Rug</label><br>
-    <input type="radio" name="question3" id="question3-B" value="B" required>
-    <label for="question3-B">B. Gezicht</label><br>
-    <input type="radio" name="question3" id="question3-C" value="C" required>
-    <label for="question3-C">C. Armen</label><br>
-    <input type="radio" name="question3" id="question3-D" value="D" required>
-    <label for="question3-D">D. Borst</label><br>
+        <!-- Vraag 3 -->
+        <div class="question-block">
+        <h3>Vraag 3: Welk lichaamsdeel is het meest getroffen door overmatige haargroei bij het weerwolvensyndroom?</h3>
+        <input type="checkbox" name="question3" value="A">A. Rug<br>
+        <input type="checkbox" name="question3" value="B">B. Gezicht<br>
+        <input type="checkbox" name="question3" value="C">C. Armen<br>
+        <input type="checkbox" name="question3" value="D">D. Borst<br><br>
+        </div>
 
-    <!-- Vraag 4 -->
-    <p>Welk hormoon is vaak verantwoordelijk voor het veroorzaken van het weerwolvensyndroom?</p>
-    <input type="radio" name="question4" id="question4-A" value="A" required>
-    <label for="question4-A">A. Testosteron</label><br>
-    <input type="radio" name="question4" id="question4-B" value="B" required>
-    <label for="question4-B">B. Oestrogeen</label><br>
-    <input type="radio" name="question4" id="question4-C" value="C" required>
-    <label for="question4-C">C. Cortisol</label><br>
-    <input type="radio" name="question4" id="question4-D" value="D" required>
-    <label for="question4-D">D. Melatonine</label><br>
+        <!-- Vraag 4 -->
+        <div class="question-block">
+        <h3>Vraag 4: Welk hormoon is vaak verantwoordelijk voor het veroorzaken van het weerwolvensyndroom?</h3>
+        <input type="checkbox" name="question4" value="A">A. Testosteron<br>
+        <input type="checkbox" name="question4" value="B">B. Oestrogeen<br>
+        <input type="checkbox" name="question4" value="C">C. Cortisol<br>
+        <input type="checkbox" name="question4" value="D">D. Melatonine<br><br>
+        </div>
 
-    <!-- Vraag 5 -->
-    <p>Hoe wordt het weerwolvensyndroom vaak behandeld?</p>
-    <input type="radio" name="question5" id="question5-A" value="A" required>
-    <label for="question5-A">A. Laserontharing</label><br>
-    <input type="radio" name="question5" id="question5-B" value="B" required>
-    <label for="question5-B">B. Hormoontherapie</label><br>
-    <input type="radio" name="question5" id="question5-C" value="C" required>
-    <label for="question5-C">C. Chemotherapie</label><br>
-    <input type="radio" name="question5" id="question5-D" value="D" required>
-    <label for="question5-D">D. Chirurgische ingreep</label><br>
-
-    <!-- Vraag 6 -->
-    <p>Wat is een mogelijke complicatie van het weerwolvensyndroom?</p>
-    <input type="radio" name="question6" id="question6-A" value="A" required>
-    <label for="question6-A">A. Hoge bloeddruk</label><br>
-    <input type="radio" name="question6" id="question6-B" value="B" required>
-    <label for="question6-B">B. Diabetes</label><br>
-    <input type="radio" name="question6" id="question6-C" value="C" required>
-    <label for="question6-C">C. Depressie</label><br>
-    <input type="radio" name="question6" id="question6-D" value="D" required>
-    <label for="question6-D">D. Infecties van de huid</label><br>
-
-    <!-- Vraag 7 -->
-    <p>Welk percentage van de wereldbevolking wordt geschat dat lijdt aan het weerwolvensyndroom?</p>
-    <input type="radio" name="question7" id="question7-A" value="A" required>
-    <label for="question7-A">A. Minder dan 1%</label><br>
-    <input type="radio" name="question7" id="question7-B" value="B" required>
-    <label for="question7-B">B. Ongeveer 5%</label><br>
-    <input type="radio" name="question7" id="question7-C" value="C" required>
-    <label for="question7-C">C. Ongeveer 10%</label><br>
-    <input type="radio" name="question7" id="question7-D" value="D" required>
-    <label for="question7-D">D. Minder dan 0,1%</label><br>
-
-    <!-- Vraag 8 -->
-    <p>Welke van de volgende termen verwijst naar een mildere vorm van het weerwolvensyndroom?</p>
-    <input type="radio" name="question8" id="question8-A" value="A" required>
-    <label for="question8-A">A. Hypertrichosis lanuginosa</label><br>
-    <input type="radio" name="question8" id="question8-B" value="B" required>
-    <label for="question8-B">B. Vellushaar</label><br>
-    <input type="radio" name="question8" id="question8-C" value="C" required>
-    <label for="question8-C">C. Terminalhaar</label><br>
-    <input type="radio" name="question8" id="question8-D" value="D" required>
-    <label for="question8-D">D. Hirsutisme</label><br>
-
-    <!-- Vraag 9 -->
-    <p>Welk dier wordt vaak geassocieerd met het weerwolvensyndroom vanwege de gelijkenis in uiterlijk?</p>
-    <input type="radio" name="question9" id="question9-A" value="A" required>
-    <label for="question9-A">A. Beer</label><br>
-    <input type="radio" name="question9" id="question9-B" value="B" required>
-    <label for="question9-B">B. Aap</label><br>
-    <input type="radio" name="question9" id="question9-C" value="C" required>
-    <label for="question9-C">C. Leeuw</label><br>
-    <input type="radio" name="question9" id="question9-D" value="D" required>
-    <label for="question9-D">D. Wolf</label><br>
-
-    <!-- Vraag 10 -->
-    <p>Wat is de meest voorkomende vorm van het weerwolvensyndroom?</p>
-    <input type="radio" name="question10" id="question10-A" value="A" required>
-    <label for="question10-A">A. Congenitale vorm</label><br>
-    <input type="radio" name="question10" id="question10-B" value="B" required>
-    <label for="question10-B">B. Verworven vorm</label><br>
-    <input type="radio" name="question10" id="question10-C" value="C" required>
-    <label for="question10-C">C. Idiopathische vorm</label><br>
-    <input type="radio" name="question10" id="question10-D" value="D" required>
-    <label for="question10-D">D. Secundaire vorm</label><br>
+        <!-- Vraag 5 -->
+        <div class="question-block">
+        <h3>Vraag 5: Hoe wordt het weerwolvensyndroom vaak behandeld?</h3>
+        <input type="checkbox" name="question5" value="A">A. Laserontharing<br>
+        <input type="checkbox" name="question5" value="B">B. Hormoontherapie<br>
+        <input type="checkbox" name="question5" value="C">C. Chemotherapie<br>
+        <input type="checkbox" name="question5" value="D">D. Chirurgische ingreep<br><br>
+        </div>
     
 
-        <input type="submit" value="Afronden" class="submitbtn" />
+        <!-- Vraag 6 -->
+        <div class="question-block">
+        <h3>Vraag 6: Wat is een mogelijke complicatie van het weerwolvensyndroom?</h3>
+        <input type="checkbox" name="question6" value="A">A. Hoge bloeddruk<br>
+        <input type="checkbox" name="question6" value="B">B. Diabetes<br>
+        <input type="checkbox" name="question6" value="C">C. Depressie<br>
+        <input type="checkbox" name="question6" value="D">D. Infecties van de huid<br><br>
+        </div>
 
-        <script src="../Quiz/js/script.js"></script>
+        <!-- Vraag 7 -->
+        <div class="question-block">
+        <h3>Vraag 7: Welk percentage van de wereldbevolking wordt geschat dat lijdt aan het weerwolvensyndroom?</h3>
+        <input type="checkbox" name="question7" value="A">A. Minder dan 1%<br>
+        <input type="checkbox" name="question7" value="B">B. Ongeveer 5%<br>
+        <input type="checkbox" name="question7" value="C">C. Ongeveer 10%<br>
+        <input type="checkbox" name="question7" value="D">D. Minder dan 0,1%<br><br>
+        </div>
+
+        <!-- Vraag 8 -->
+        <div class="question-block">
+        <h3>Vraag 8: Welke van de volgende termen verwijst naar een mildere vorm van het weerwolvensyndroom?</h3>
+        <input type="checkbox" name="question8" value="A">A. Hypertrichosis lanuginosa<br>
+        <input type="checkbox" name="question8" value="B">B. Vellushaar<br>
+        <input type="checkbox" name="question8" value="C">C. Terminalhaar<br>
+        <input type="checkbox" name="question8" value="D">D. Hirsutisme<br><br>
+        </div>
+
+        <!-- Vraag 9 -->
+        <div class="question-block">
+        <h3>Vraag 9: Welk dier wordt vaak geassocieerd met het weerwolvensyndroom vanwege de gelijkenis in uiterlijk?</h3>
+        <input type="checkbox" name="question9" value="A">A. Beer<br>
+        <input type="checkbox" name="question9" value="B">B. Aap<br>
+        <input type="checkbox" name="question9" value="C">C. Leeuw<br>
+        <input type="checkbox" name="question9" value="D">D. Wolf<br><br>
+        </div>
+
+        <!-- Vraag 10 -->
+        <div class="question-block">
+        <h3>Vraag 10: Wat is de meest voorkomende vorm van het weerwolvensyndroom?</h3>
+        <input type="checkbox" name="question10" value="A">A. Congenitale vorm<br>
+        <input type="checkbox" name="question10" value="B">B. Verworven vorm<br>
+        <input type="checkbox" name="question10" value="C">C. Idiopathische vorm<br>
+        <input type="checkbox" name="question10" value="D">D. Secundaire vorm<br><br>
+        </div>
+    
+        <input type="submit" value="Afronden" class="submitbtn"/>
+        
 
         </form>
+
+        <script src="../Quiz/js/script.js"></script>
         </div>
     </div>
 </html>
 
+
+       
+
+        
+
+        
+        
+    
+        
+        
+
+        
+
+        
+       

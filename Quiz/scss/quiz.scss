@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -17,18 +19,16 @@ h1 {
     color: #333;
 }
 
-#quiz {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-ol {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 20px;
+.question-block {
+    background-color: #fff; /* Achtergrondkleur */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Ruimte onder elke vraag */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 
 h3 {
@@ -36,56 +36,56 @@ h3 {
     color: #333;
 }
 
+input[type=radio] {
+    display: none;
+}
+
 label {
     cursor: pointer;
-    display: block;
+    display: flex; /* Zorgt ervoor dat het label en het selectievakje op dezelfde regel staan */
+    align-items: center; /* Centreert het selectievakje verticaal met de tekst */
     padding-left: 25px;
     position: relative;
     margin-bottom: 10px;
     font-size: 16px;
     color: #555;
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 2px;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #ccc;
-        border-radius: 50%;
-        background-color: #fff;
-    }
 }
 
-input[type="radio"] {
-    display: none;
-
-    &:checked + label::after {
-        content: '\2713';
-        font-size: 14px;
-        color: #28a745;
-        position: absolute;
-        top: 0;
-        left: 4px;
-    }
+label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%; /* Maakt het selectievakje rond */
+    background-color: #fff;
+    margin-right: 10px; /* Voegt wat ruimte toe tussen het selectievakje en de tekst */
+}
+  
+input[type=radio]:checked + label::after {
+    content: "✓";
+    font-size: 20px;
+    color: white;
+    background-color: #28a745;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    padding: 2px;
 }
 
 .submitbtn {
     display: block;
     width: 100%;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-
+  
     &:hover {
-        background-color: #0056b3;
+      background-color: #4f9bff; // Donkerdere kleur bij hover
     }
 }
+
+
 
 // Extra stijlen voor quiz resultaat
 .result {
@@ -116,3 +116,8 @@ input[type="radio"] {
         margin-bottom: 5px;
     }
 }
+
+
+
+
+
