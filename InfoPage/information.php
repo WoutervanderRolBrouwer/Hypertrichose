@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Page 1</title>
+    <title>Infomation Page</title>
     <link rel="stylesheet" href="Styling/nicepage.css" media="screen">
 <link rel="stylesheet" href="Styling/information.css" media="screen">
     <script class="u-script" type="text/javascript" src="Styling/js/jquery.js" defer=""></script>
@@ -12,6 +12,7 @@
     <meta name="generator" content="Nicepage 6.5.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link rel="stylesheet" href="../css/style.css">
+    
     
     
     
@@ -32,12 +33,12 @@
       <nav class="main-menu">
           <img src="../logo/logo.svg" height="90px" alt="">
           <ul >
-                  <li><a class="home" href="index.php" id="home">HOME</a></li>
-                  <li><a class="information" href="infopage/information.php">INFORMATION</a></li>
-                  <li><a class="form" href="form/form.php">FORM</a></li>
-                  <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
-                  <li><a class="behandelingen" href="behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
-                  <li><a class="FAQ" href="FAQ/FAQ.php">FAQ</a></li>
+                  <li><a class="home" href="../index.php" id="home">HOME</a></li>
+                  <li><a class="information" href="information.php">INFORMATION</a></li>
+                  <li><a class="form" href="../form/form.php">FORM</a></li>
+                  <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
+                  <li><a class="behandelingen" href="../behandelingen/behandeling.php">BEHANDELINGEN</a></li>
+                  <li><a class="FAQ" href="../FAQ/FAQ.php">FAQ</a></li>
           </ul>
       </nav>
   </header>
@@ -171,8 +172,21 @@
       </div>
     </section>
     
-    
-    
+    <section class="u-clearfix u-grey-10 u-section-4" id="sec-355e">
+    <div class="u-size-30">
+                <div class="u-layout-col">
+                  <div class="u-align-center u-container-style u-layout-cell u-size-30 u-white u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+
+                     
+                      <h3 class="u-text u-text-default u-text-2">
+                          
+                         <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" data-href="../Quiz/introduction-quiz.php">Test uw kennis om op mij te klikken!</a>
+                      </h3> 
+                    </div>
+                  </div>
+    </section>
+  
     
     <section class="u-backlink u-clearfix u-grey-80">
     

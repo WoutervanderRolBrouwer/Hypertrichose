@@ -5,13 +5,14 @@
     <meta name="keywords" content="Welkom op de website over Hypertrichose​​​">
     <meta name="description" content="">
     <title>Home</title>
-    <link rel="stylesheet" href="Homepage/nicepage.css" media="screen">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Homepage/nicepage.css">
 <link rel="stylesheet" href="Homepage/Home.css" media="screen">
     <script class="u-script" type="text/javascript" src="Homepage/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="Homepage/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 6.5.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link rel="stylesheet" href="css/style.css">
+    
     
     
     
@@ -28,7 +29,7 @@
   <nav class="main-menu">
       <img src="logo/logo.svg" height="90px" alt="">
       <ul >
-              <li><a class="home" href="Homepage/Home.php" id="home">HOME</a></li>
+              <li><a class="home" href="index.php" id="home">HOME</a></li>
               <li><a class="information" href="InfoPage/information.php">INFORMATION</a></li>
               <li><a class="form" href="Form/form.php">FORM</a></li>
               <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
@@ -36,7 +37,9 @@
               <li><a class="FAQ" href="FAQ/FAQ.php">FAQ</a></li>
               
       </ul>
-  </nav>
+</nav>
+<style>  </style>
+
 </header>
 
     <meta name="theme-color" content="#478ac9">

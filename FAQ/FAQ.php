@@ -8,7 +8,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
-    
+    <title>FAQ</title>
 </head>
 <style>
     [x-cloak] {
@@ -27,7 +27,7 @@
                     <li><a class="form" href="../form/form.php">FORM</a></li>
                     <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
                     <li><a class="behandelingen" href="../behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
-                    <li><a class="FAQ" href="../FAQ/FAQ.php">FAQ</a></li>
+                    <li><a class="FAQ" href="FAQ/FAQ.php">FAQ</a></li>
             </ul>
         </nav>
     </header>

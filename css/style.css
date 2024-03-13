@@ -18,7 +18,7 @@ header nav ul li {
 header nav ul li a {
   display: inline-block;
   padding: 1rem;
-  color: #000;
+ color: #000 !important ;
 }
 header nav.main-menu ul > li > a {
   text-decoration: none;

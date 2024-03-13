@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hypertrichose Information</title>
+    <title>Contact Page</title>
     <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
     <link rel="stylesheet"  href="infopage/styling/info.css" />
@@ -15,17 +15,18 @@
 
 <body>
 <header>
-    <nav class="main-menu">
-        <img src="../logo/logo.svg" height="90px" alt="">
-        <ul >
-                <li><a class="home" href="../index.php" id="home">HOME</a></li>
-                <li><a class="information" href="../infopage/information.php">INFORMATION</a></li>
-                <li><a class="form" href="../form/form.php">FORM</a></li>
-                <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
-                <li><a class="behandelingen" href="../behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
-        </ul>
-    </nav>
-</header>
+      <nav class="main-menu">
+          <img src="../logo/logo.svg" height="90px" alt="">
+          <ul >
+                  <li><a class="home" href="../index.php" id="home">HOME</a></li>
+                  <li><a class="information" href="../infopage/information.php">INFORMATION</a></li>
+                  <li><a class="form" href="../form/form.php">FORM</a></li>
+                  <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
+                  <li><a class="behandelingen" href="../behandelingen/behandeling.php">BEHANDELINGEN</a></li>
+                  <li><a class="FAQ" href="../FAQ/FAQ.php">FAQ</a></li>
+          </ul>
+      </nav>
+  </header>
 <style>
     <?php include '../scss/style.scss'; ?>
 </style>
