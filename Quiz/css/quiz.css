@@ -1,51 +1,44 @@
 @charset "UTF-8";
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
-#page-wrap {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
+#page-wrap,
 .question-block {
-    background-color: #fff; /* Achtergrondkleur */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h3 {
-  font-size: 18px;
+h1 #results,
+h3 #results,
+.result #results {
+  text-align: center;
   color: #333;
 }
 
-input[type=radio] {
-  display: none;
+.question-block {
+  margin-bottom: 20px;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 label {
   cursor: pointer;
-  display: flex; /* Zorgt ervoor dat het label en het selectievakje op dezelfde regel staan */
-  align-items: center; /* Centreert het selectievakje verticaal met de tekst */
+  display: inline-block;
   padding-left: 25px;
   position: relative;
   margin-bottom: 10px;
   font-size: 16px;
   color: #555;
 }
-
 label::before {
   content: "";
   position: absolute;
@@ -54,12 +47,12 @@ label::before {
   width: 16px;
   height: 16px;
   border: 1px solid #ccc;
-  border-radius: 50%; /* Maakt het selectievakje rond */
+  border-radius: 50%;
   background-color: #fff;
-  margin-right: 10px; /* Voegt wat ruimte toe tussen het selectievakje en de tekst */
+  margin-right: 10px;
 }
 
-input[type=radio]:checked + label::after {
+input[type=checkbox]:checked + label::after {
   content: "✓";
   font-size: 20px;
   color: white;
@@ -79,30 +72,26 @@ input[type=radio]:checked + label::after {
   background-color: #4f9bff;
 }
 
-/* Aanvullende stijlen voor resultaten kunnen hier worden toegevoegd */
 .result {
   text-align: center;
   margin-top: 50px;
 }
-.result #results {
-  font-size: 24px;
-  color: #333;
-}
 
-#correct-answers {
-  margin-top: 20px;
-}
-#correct-answers p {
-  color: #28a745;
-  margin-bottom: 5px;
-}
-
+#correct-answers,
 #incorrect-answers {
   margin-top: 20px;
 }
+#correct-answers p,
+#incorrect-answers p {
+  margin-bottom: 5px;
+}
+
+#correct-answers p {
+  color: #28a745;
+}
+
 #incorrect-answers p {
   color: #dc3545;
-  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=quiz.css.map */
