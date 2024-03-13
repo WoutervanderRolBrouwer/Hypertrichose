@@ -1,14 +1,15 @@
 <?php
-$host = '127.0.0.1';
-$db   = 'hypertrichose';
-$user = 'root';
-$pass = '';
-$charset = 'utf8mb4';
+$dbHost = "localhost";
+$dbUser = "root";
+$dbPass = "";
+$dbname = "hypertrichose";
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$opt = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false,
-];
-$pdo = new PDO($dsn, $user, $pass, $opt);
+// Maak verbinding met de database
+$conn = new mysqli($dbHost, $dbUser, $dbPass, $dbname);
+
+// Controleer de verbinding
+if ($conn->connect_error) {
+  die("Verbinding mislukt: " . $conn->connect_error);
+}
+
+return $conn;
