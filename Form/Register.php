@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </label>
             <input type="password" name="password" placeholder="Wachtwoord" id="password" required>
             
-            <a href="index.php">Al een account? Log in</a>
+            <a href="form.php">Al een account? Log in</a>
             <input type="submit" value="Aanmelden">
         </form>
     </div>
