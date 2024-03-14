@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
+    <title>FAQ</title>
 </head>
 <style>
     [x-cloak] {
@@ -17,14 +19,14 @@
     
     <!-- Navbar -->
     <header>
-        <nav class="main-menu">
-            <img src="logo/logo.svg" height="90px" alt="">
-            <ul >
-                    <li><a class="home" href="index.php" id="home">HOME</a></li>
-                    <li><a class="information" href="infopage/information.php">INFORMATION</a></li>
-                    <li><a class="form" href="form/form.php">FORM</a></li>
-                    <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
-                    <li><a class="behandelingen" href="behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
+    <nav class="main-menu">
+        <img src="logo/logo.svg" height="90px" alt="">
+        <ul>
+                    <li><a class="home" href="../index.php" id="home">HOME</a></li>
+                    <li><a class="information" href="../infopage/information.php">INFORMATION</a></li>
+                    <li><a class="form" href="../form/form.php">FORM</a></li>
+                    <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
+                    <li><a class="behandelingen" href="../behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
                     <li><a class="FAQ" href="FAQ/FAQ.php">FAQ</a></li>
             </ul>
         </nav>
@@ -39,7 +41,7 @@
     <div class="grid gap-3 py-8 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-2">
         <div class="space-y-3">
         
-        <!--Link boven-->
+        <!--Link boven vraag-->
         <div x-data="accordion(1)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
             <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
             <div class="flex items-center justify-between">
@@ -59,7 +61,7 @@
         </div>
        
 
-        <!--Links midden-->
+        <!--Links midden vraag-->
         <div x-data="accordion(2)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
             <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
             <div class="flex items-center justify-between">
@@ -80,7 +82,7 @@
 
       
 
-        <!--Link onder-->
+        <!--Link onder vraag-->
         <div x-data="accordion(3)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
             <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
             <div class="flex items-center justify-between">
@@ -106,7 +108,7 @@
 
         <div class="space-y-3">
        
-        <!-- Recht boven-->
+        <!-- Recht boven vraag-->
         <div x-data="accordion(4)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
             <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
             <div class="flex items-center justify-between">
@@ -127,7 +129,7 @@
         </div>
      
 
-        <!-- Rechts Midden -->
+        <!-- Rechts Midden vraag-->
         <div x-data="accordion(5)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
             <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
             <div class="flex items-center justify-between">
@@ -147,7 +149,7 @@
         </div>
 
         
-        <!-- rechts Onder-->
+        <!-- rechts Onder vraag-->
         <div x-data="accordion(6)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
             <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
             <div class="flex items-center justify-between">
