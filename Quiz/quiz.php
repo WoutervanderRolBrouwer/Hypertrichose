@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../Quiz/css/quiz.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/main.css">
-
     <header>
   <nav class="main-menu">
       <img src="../logo/logo.svg" height="90px" alt="">
@@ -25,7 +24,7 @@
 
 </head>
 <body>
-    <div id="page-wrap">
+    <div id="quiz">
         <h1>Quiz</h1>
         
           <form action="../Quiz/quiz_result.php" method="post" id="quiz" >

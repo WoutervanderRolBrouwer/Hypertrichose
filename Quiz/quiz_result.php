@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Resultaat</title>
-    <link rel="stylesheet" href="../Quiz/css/quiz.css">
+    <link rel="stylesheet" href="../Quiz/css/result.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/main.css">
 
     <header>
   <nav class="main-menu">
       <img src="../logo/logo.svg" height="90px" alt="">
-      <ul >
+      <ul>
               <li><a class="home" href="../index.php" id="home">HOME</a></li>
               <li><a class="information" href="../InfoPage/information.php">INFORMATION</a></li>
               <li><a class="form" href="../Form/form.php">FORM</a></li>
@@ -26,21 +26,22 @@
 <body>
 
 <div class="result">
+    
         <h1>Quiz Resultaat</h1>
 
         <?php
 
         $correct_answers = array(
-            "A", // Vraag 1
-            "B", // Vraag 2
-            "A", // Vraag 3
-            "D", // Vraag 4
-            "B", // Vraag 5
-            "A", // Vraag 6
-            "C", // Vraag 7
-            "A", // Vraag 8
-            "D", // Vraag 9
-            "A"  // Vraag 10
+            "A Hypertrichose", // Vraag 1
+            "B Virusinfectie", // Vraag 2
+            "A Rug", // Vraag 3
+            "D Melatonine", // Vraag 4
+            "B Hormoontherapie", // Vraag 5
+            "A Hoge bloeddruk", // Vraag 6
+            "C Ongeveer 10%", // Vraag 7
+            "A Hypertrichosis lanuginosa", // Vraag 8
+            "D Wolf", // Vraag 9
+            "A Congenitale vorm"  // Vraag 10
         );
 
         $answer1 = isset($_POST['question1']) ? $_POST['question1'] : '';
