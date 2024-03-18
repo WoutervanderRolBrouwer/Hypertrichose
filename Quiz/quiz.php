@@ -27,7 +27,7 @@
     <div id="quiz">
         <h1>Quiz</h1>
         
-          <form action="../Quiz/quiz_result.php" method="post" id="quiz" >
+          <form action="../Quiz/quiz-database.php" method="post" id="quiz" >
 
         <!-- Vraag 1 -->
         <div class="question-block">
