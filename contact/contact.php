@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,10 +8,9 @@
     <title>Contact Page</title>
     <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
-    <link rel="stylesheet"  href="infopage/styling/info.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"  href="../css/style.css" />
-    <link rel="stylesheet" href="Styling\info.css" />
+    <link rel="stylesheet" href="../Styling\info.css" />
 </head>
 
 <body>
@@ -63,7 +63,6 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
         <p class="title">Arts-assistent dermatologie</p>
         <p>één seconden kan een leven en een wereld redden</p>
         <p>Jeroenmolenschoot@outlook.com</p>
-        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -75,7 +74,6 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
         <p class="title">Cosmetisch dermatoloog</p>
         <p>Onbevooroordeelde observatie voor optimale zorg</p>
         <p>Mvr.Laurakienhorst@outlook.com</p>
-        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -87,7 +85,6 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
         <p class="title">miraDry behandelaar</p>
         <p>Het is belangrijk om letterlijk lekker in je vel te zitten.</p>
         <p>MarleenBaars@example.com</p>
-        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -103,7 +100,6 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
         <p class="title">Arts-assistent MiraDry behandelaar</p>
         <p>Nauwlettend speuren naar licht in de obscuriteit van het weerwolvensyndroom</p>
         <p>AnnaDijkstra@outlook.com</p>
-        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -115,7 +111,6 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
         <p class="title">Psychologie Specialist</p>
         <p>Vertrouwd met de grimmige lagen van het weerwolvensyndroom, wij bieden hoop en zorg</p>
         <p>PatriciaVanHuis@outlook.com</p>
-        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -127,7 +122,6 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
         <p class="title">Speciale PiroBehandelaar</p>
         <p>Gewijd aan het ontrafelen van de mysteries van het weerwolvensyndroom, elke stap van de weg</p>
         <p>AnnaDoc@example.com</p>
-        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -175,25 +169,28 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
       <img src="google maps2.png" src="" style="width: 130%;height:88%;margin-left: -24px;">
     </div>
     <div class="column">
-      <form action="/action_page.php" style="margin-left: 100px;">
+      <form action="submit_contact.php"  method="POST"style="margin-left: 100px;">
       <label for="fname">Voornaam</label>
-    <input type="text" id="fname" name="firstname" placeholder="Jou naam..">
+    <input type="text" id="firstname" name="firstname" placeholder="Jou naam..">
 
     <label for="lname">Achternaam</label>
-    <input type="text" id="lname" name="lastname" placeholder="Jou achternaam..">
+    <input type="text" id="lastname" name="lastname" placeholder="Jou achternaam..">
         <br><br>
-        <label for="mail_form">Mail *</label>
+        <label for="mail_form">Mail</label>
     <input type="text" id="mail_form" name="mail_form" placeholder="Jou mail..">
         </select>
         <label for="subject">Onderwerp</label>
         <textarea id="subject" name="subject" placeholder="Je onderwerp.." style="height:70px"></textarea>
         <label for="subject">Bericht</label>
-        <textarea id="subject" name="subject" placeholder="Je bericht.." style="height:110px"></textarea>
+        <textarea id="message" name="message" placeholder="Je bericht.." style="height:110px"></textarea>
         <input type="submit" value="Verzend" style="width:26.1em">
+      </form>
       </form>
     </div>
   </div>
 </div>
+
+
 
 
 
