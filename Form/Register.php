@@ -17,7 +17,7 @@
                     <li><a class="information" href="../infopage/information.php">INFORMATION</a></li>
                     <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
                     <li><a class="behandelingen" href="../behandelingen/behandelingen.php">BEHANDELINGEN</a></li>
-                    <li><a class="FAQ active" href="FAQ/FAQ.php">FAQ</a></li>
+                    <li><a class="FAQ " href="../FAQ/FAQ.php">FAQ</a></li>
                 </ul>
                 <ul class="login">
                 <li class="login"><a class="form active" href="../form/form.php">inloggen</a></li>

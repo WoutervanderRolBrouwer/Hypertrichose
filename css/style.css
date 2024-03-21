@@ -4,6 +4,7 @@ header nav {
   background-color: #fff;
   z-index: 3;
   align-items: center;
+  height: 100px;
 }
 header nav ul {
   display: flex;
@@ -46,6 +47,10 @@ img.logo {
 
 .hamburger-menu {
   flex: 1;
+}
+
+body {
+  background-color: #f2f2f2;
 }
 
 h1,
