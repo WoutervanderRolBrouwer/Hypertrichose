@@ -127,7 +127,6 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
   </div>
  <style>
   .container {
-  display: flex;
   flex-direction: column;
 }
 
