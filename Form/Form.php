@@ -26,7 +26,7 @@
             </ul>
         </nav>
     </header>
-    <div class="login">
+    <div class="loginForm">
         <h1>Login</h1>
         <form action="authenticate.php" method="post">
             <label for="username">

@@ -9,26 +9,26 @@ body {
   background-color: #435165;
 }
 
-.login {
+.loginForm {
   width: 400px;
   background-color: #ffffff;
   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
   margin: 100px auto;
 }
-.login h1 {
+.loginForm h1 {
   text-align: center;
   color: #5b6574;
   font-size: 24px;
   padding: 20px 0 20px 0;
   border-bottom: 1px solid #dee0e4;
 }
-.login form {
+.loginForm form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 20px;
 }
-.login form label {
+.loginForm form label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,16 +37,16 @@ body {
   background-color: #3274d6;
   color: #ffffff;
 }
-.login form input[type="password"],
-.login form input[type="text"],
-.login form input[type="email"] {
+.loginForm form input[type="password"],
+.loginForm form input[type="text"],
+.loginForm form input[type="email"] {
   width: 310px;
   height: 50px;
   border: 1px solid #dee0e4;
   margin-bottom: 20px;
   padding: 0 15px;
 }
-.login form input[type="submit"] {
+.loginForm form input[type="submit"] {
   width: 100%;
   padding: 15px;
   margin-top: 20px;
@@ -57,7 +57,7 @@ body {
   color: #ffffff;
   transition: background-color 0.2s;
 }
-.login form input[type="submit"]:hover {
+.loginForm form input[type="submit"]:hover {
   background-color: #2868c7;
   transition: background-color 0.2s;
 }

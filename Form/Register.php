@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
             </ul>
         </nav>
     </header>
-    <div class="login">
+    <div class="loginForm">
         <h1>Login</h1>
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -68,7 +69,7 @@
                         echo "Error: Uw gewenste gebruikersnaam is al in gebruik.";
                     } elseif ($emailFound) {
                         echo "Error: Het opgegeven e-mailadres is al in gebruik.";
-                    } else {css
+                    } else {
                         echo "Error: Duplicatiefout opgetreden.";
                     }
                 } else {
