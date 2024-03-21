@@ -21,7 +21,7 @@
                     <li><a class="FAQ " href="../FAQ/FAQ.php">FAQ</a></li>
                 </ul>
                 <ul class="login">
-                <li class="login"><a class="form active" href="../form/form.php">inloggen</a></li>
+                <li class="login"><a class="form active" href="../form/form.php">Inloggen</a></li>
 
             </ul>
         </nav>
