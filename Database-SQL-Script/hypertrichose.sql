@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 14 mrt 2024 om 09:44
+-- Gegenereerd op: 18 mrt 2024 om 15:14
 -- Serverversie: 8.2.0
 -- PHP-versie: 8.2.13
 
@@ -32,13 +32,14 @@ USE `hypertrichose`;
 DROP TABLE IF EXISTS `quiz_results`;
 CREATE TABLE IF NOT EXISTS `quiz_results` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `username` int NOT NULL,
+  `username` varchar(20) NOT NULL,
   `quiz_date` datetime NOT NULL,
-  `correct_answers` int NOT NULL DEFAULT '0',
-  `incorrect_answers` int NOT NULL DEFAULT '0',
+  `correct_answers` int NOT NULL,
+  `incorrect_answers` int NOT NULL,
   PRIMARY KEY (`id`),
   KEY `user_id` (`username`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 -- --------------------------------------------------------
 
@@ -55,7 +56,15 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
+(9, 'iugygv', 'wuinii@ugb.nl', 'jhvg'),
+(10, 'hgdf', 'marvinakpabot@gmail.com', 'tyjhj');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
