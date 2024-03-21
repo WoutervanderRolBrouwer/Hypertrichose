@@ -6,12 +6,29 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+<header>
+    <nav class="main-menu">
+        <img src="../logo/logo.svg" class="logo" height="90px" alt="">
+        <ul>
+                    <li><a class="home" href="../index.php" id="home">HOME</a></li>
+                    <li><a class="information" href="../infopage/information.php">INFORMATION</a></li>
+                    <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
+                    <li><a class="behandelingen" href="../behandelingen/behandeling.php">BEHANDELINGEN</a></li>
+                    <li><a class="FAQ active" href="FAQ/FAQ.php">FAQ</a></li>
+                </ul>
+                <ul class="login">
+                <li class="login"><a class="form active" href="../form/form.php">inloggen</a></li>
+
+            </ul>
+        </nav>
+    </header>
     <div class="login">
         <h1>Login</h1>
-        <form action="../index.php" method="post">
+        <form action="authenticate.php" method="post">
             <label for="username">
                 <i class="fas fa-user"></i>
             </label>

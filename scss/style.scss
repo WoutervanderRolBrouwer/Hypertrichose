@@ -1,5 +1,8 @@
 @use "navbar";
 /*Dit houd in dat de navbar knop de kleur #111 (zwart) word wanneer je er met je muis overheen gaat */
+img.logo {
+  height: 90px !important;
+}
 
 .hamburger-menu {
   flex: 1;

@@ -5,20 +5,32 @@ header {
     background-color: #fff;
     z-index: 3;
     align-items: center;
+
     ul {
       display: flex;
       padding: 0;
       margin: 0.5rem auto 0.5rem auto;
       background-color: #fff;
-
+      &.login {
+        text-align: end;
+        margin: 0;
+      }
       li {
         display: flex;
         position: relative;
-
+        &.active {
+          background-color: lightgray;
+        }
         a {
           display: inline-block;
           padding: 1rem;
-          color: #000;
+          color: #000 !important;
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          font-size: 1.125rem;
+          &.active {
+            background-color: lightgray;
+          }
         }
       }
     }

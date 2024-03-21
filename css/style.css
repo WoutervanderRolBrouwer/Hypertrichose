@@ -11,14 +11,26 @@ header nav ul {
   margin: 0.5rem auto 0.5rem auto;
   background-color: #fff;
 }
+header nav ul.login {
+  text-align: end;
+  margin: 0;
+}
 header nav ul li {
   display: flex;
   position: relative;
 }
+header nav ul li.active {
+  background-color: lightgray;
+}
 header nav ul li a {
   display: inline-block;
   padding: 1rem;
- color: #000 !important ;
+  color: #000 !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.125rem;
+}
+header nav ul li a.active {
+  background-color: lightgray;
 }
 header nav.main-menu ul > li > a {
   text-decoration: none;
@@ -28,6 +40,10 @@ header nav.main-menu ul > li > a:hover {
 }
 
 /*Dit houd in dat de navbar knop de kleur #111 (zwart) word wanneer je er met je muis overheen gaat */
+img.logo {
+  height: 90px !important;
+}
+
 .hamburger-menu {
   flex: 1;
 }
