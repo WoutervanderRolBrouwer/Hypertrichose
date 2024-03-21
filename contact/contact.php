@@ -8,9 +8,7 @@
     <title>Contact Page</title>
     <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"  href="../css/style.css" />
-    <link rel="stylesheet" href="../Styling\info.css" />
 </head>
 
 <body>
@@ -61,7 +59,7 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
     <div class="card">
       <img src="Jeroen Molen.jpg" alt="">
       <div class="container">
-        <h2 style="font-family:'initial;">Jeroen Helvoet</h2>
+        <h2 style="">Jeroen Helvoet</h2>
         <p class="title">Arts-assistent dermatologie</p>
         <p>één seconden kan een leven en een wereld redden</p>
         <p>Jeroenmolenschoot@outlook.com</p>
@@ -72,7 +70,7 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
     <div class="card">
       <img src="Laurokienhorst.jpg" alt="">
       <div class="container">
-        <h2 style="font-family:'initial;">Mvr. Laurokienhorst</h2>
+        <h2>Mvr. Laurokienhorst</h2>
         <p class="title">Cosmetisch dermatoloog</p>
         <p>Onbevooroordeelde observatie voor optimale zorg</p>
         <p>Mvr.Laurakienhorst@outlook.com</p>
@@ -83,7 +81,7 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
     <div class="card">
       <img src="Tielenmans.jpg" alt="">
       <div class="container">
-        <h2 style="font-family:'initial;">Mevr. Marleen Baars</h2>
+        <h2>Mevr. Marleen Baars</h2>
         <p class="title">miraDry behandelaar</p>
         <p>Het is belangrijk om letterlijk lekker in je vel te zitten.</p>
         <p>MarleenBaars@example.com</p>
@@ -98,7 +96,7 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
     <div class="card">
       <img src="Medischss.jpg" alt="">
       <div class="container">
-        <h2 style="font-family:'initial;">Mvr. Anna Dijkstra</h2>
+        <h2>Mvr. Anna Dijkstra</h2>
         <p class="title">Arts-assistent MiraDry behandelaar</p>
         <p>Nauwlettend speuren naar licht in de obscuriteit van het weerwolvensyndroom</p>
         <p>AnnaDijkstra@outlook.com</p>
@@ -109,7 +107,7 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
     <div class="card">
       <img src="MediscH.png" alt="">
       <div class="container">
-        <h2 style="font-family:'initial;">Mvr. Patricia van Huis</h2>
+        <h2>Mvr. Patricia van Huis</h2>
         <p class="title">Psychologie Specialist</p>
         <p>Vertrouwd met de grimmige lagen van het weerwolvensyndroom, wij bieden hoop en zorg</p>
         <p>PatriciaVanHuis@outlook.com</p>
@@ -120,7 +118,7 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
     <div class="card">
       <img src="Medichsss.jpg" alt="">
       <div class="container">
-        <h2 style="font-family:'initial;">Mvr. Hande Ercel</h2>
+        <h2>Mvr. Hande Ercel</h2>
         <p class="title">Speciale PiroBehandelaar</p>
         <p>Gewijd aan het ontrafelen van de mysteries van het weerwolvensyndroom, elke stap van de weg</p>
         <p>AnnaDoc@example.com</p>
@@ -129,7 +127,6 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
   </div>
  <style>
   .container {
-  display: flex;
   flex-direction: column;
 }
 
@@ -153,18 +150,18 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
 
 <div class="container">
   <div style="text-align:center">
-    <h2 style="font-family:'initial;">Contacteer ons</h2>
+    <h2>Contacteer ons</h2>
     <p style="font-family:'initial;">Bel ons kantoor om een afspraak in te plannen, of vul onderstaand contactformulier in en wij nemen binnen 24 uur contact met u op.
        Plan vandaag nog een gratis adviesgesprek in! Onze medewerkers en chirurgen staan voor u klaar en beantwoorden graag al uw vragen.
        We helpen je graag om alle informatie te krijgen die je nodig hebt om de beste keuze te maken.
     </p>
   </div>
   <div style="margin-left:17em">
-    <h2 style="height: 36px; font-family:'initial;">Onze Locatie</h2>
+    <h2 style="height: 36px;">Onze Locatie</h2>
   </div>
   <div class="container">
   <div style="margin-left:55em">
-    <h2 style="height: 36px; font-family:'initial;">Gegevens</h2>
+    <h2 style="height: 36px;">Gegevens</h2>
   </div>
   <div class="row">
     <div class="column">
@@ -325,10 +322,9 @@ font-family: 'Poppins', sans-serif;
 body{
 	line-height: 1.5;
 	
-  
+  margin: 0;
 }
 *{
-	margin:2px;
 	padding:0;
 	box-sizing: border-box;
 }
