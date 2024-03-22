@@ -30,7 +30,7 @@
   <nav class="main-menu">
       <img src="logo/logo.svg" height="90px" alt="">
       <ul >
-              <li class="active"><a class="home active" href="index.php" id="home">HOME</a></li>
+             <li class="active"><a class="home active" href="index.php" id="home">HOME</a></li>
               <li><a class="information" href="InfoPage/information.php">INFORMATION</a></li>
               <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
               <li><a class="behandelingen" href="behandelingen/behandeling.php">BEHANDELINGEN</a></li>
@@ -96,13 +96,13 @@
         <div class="u-container-style u-expanded-width u-group u-shape-rectangle u-white u-group-1">
           <div class="u-container-layout u-container-layout-1">
             <h3 class="u-text u-text-default u-text-1">Wat kunt u vinden op deze website?</h3>
-            <h5 class="u-text u-text-default u-text-2">Informatie over Hypertrichose </h5>
-            <h5 class="u-text u-text-default u-text-3">Quiz uw kennis&nbsp; te testen </h5>
-            <h5 class="u-text u-text-default u-text-4">Quiz of u Hypertrichose heeft </h5>
-            <h5 class="u-text u-text-default u-text-5">Contact kunnen leggen met medische hulp </h5>
-            <h5 class="u-text u-text-default u-text-6">Welke hehandelingen er zijn voor Hypertrichose</h5>
-            <h5 class="u-text u-text-default u-text-7">Paar veel gestelde vragen over Hypertrichose</h5>
-            <h5 class="u-text u-text-default u-text-8">Waar Hypertrichose als eerst gezien is </h5>
+            <h5 class="u-text u-text-default u-text-2"><a href="Infopage/information.php">Informatie over Hypertrichose </h5></a>
+            <h5 class="u-text u-text-default u-text-3"><a href="Quiz/introduction-quiz.php">Quiz uw kennis&nbsp; te testen </h5></a>
+            <h5 class="u-text u-text-default u-text-4"><a href="">Quiz of u Hypertrichose heeft </h5></a>
+            <h5 class="u-text u-text-default u-text-5"><a href="contact/contact.php">Contact kunnen leggen met medische hulp </h5></a>
+            <h5 class="u-text u-text-default u-text-6"><a href="behandelingen/behandeling.php">Welke hehandelingen er zijn voor Hypertrichose</h5></a>
+            <h5 class="u-text u-text-default u-text-7"><a href="FAQ/FAQ.php">Paar veel gestelde vragen over Hypertrichose</h5></a>
+            <h5 class="u-text u-text-default u-text-8"><a href="infopage/information.php">Waar Hypertrichose als eerst gezien is </h5></a>
           </div>
         </div>
       </div>
