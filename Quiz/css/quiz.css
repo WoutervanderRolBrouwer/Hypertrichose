@@ -14,11 +14,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 #results,
-h3 #results,
-.result #results {
+h1,
+h3 {
+  font-family: sans-serif;
   text-align: center;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .question-block {

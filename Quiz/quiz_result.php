@@ -24,79 +24,104 @@
 </header>
 </head>
 <body>
+<div class="quiz">
+    <h1>Quiz Resultaat</h1>
 
-<div class="result">
-    
-        <h1>Quiz Resultaat</h1>
-
-        <?php
-function getDbConnection() {
-    $host = 'localhost';
-    $dbname = 'hypertrichose';
-    $DBusername = 'stmakpabot';
-    $DBpassword = 'zX[LqFHU@rx9rQJT';
-    return new PDO("mysql:host=$host;dbname=$dbname", $DBusername, $DBpassword);
-}
-
-function handleQuizResult($pdo, $username, $userAnswers, $correctAnswers) {
-    $totalCorrect = 0;
-    $correctAnswersInfo = [];
-    $incorrectAnswersInfo = [];
-
-    foreach ($correctAnswers as $index => $correctAnswer) {
-        $questionNumber = $index + 1;
-        $userAnswer = $userAnswers[$index] ?? '';
-
-        if ($userAnswer == $correctAnswer) {
-            $totalCorrect++;
-            $correctAnswersInfo[] = "Vraag $questionNumber: Juist";
-        } else {
-            $incorrectAnswersInfo[] = "Vraag $questionNumber: Fout (Juist antwoord: $correctAnswer)";
-        }
+    <?php
+    function getDbConnection() {
+        $host = 'localhost';
+        $dbname = 'hypertrichose'; /**Pas deze naam niet aan */
+        $DBusername = 'stmakpabot'; /**Pas deze naam niet aan */
+        $DBpassword = 'zX[LqFHU@rx9rQJT';
+        return new PDO("mysql:host=$host;dbname=$dbname", $DBusername, $DBpassword);
     }
 
-    $sql = "INSERT INTO quiz_results (username, quiz_date, correct_answers, incorrect_answers) VALUES (?, NOW(), ?, ?)";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$username, $totalCorrect, count($correctAnswers) - $totalCorrect]);
+    function handleQuizResult($pdo, $username, $userAnswers, $correctAnswers) {
+        $totalCorrect = 0;
+        $correctAnswersInfo = [];
+        $incorrectAnswersInfo = [];
+        $correctAnswersExplanations = [
+            "Hypertrichose is de medische term voor overmatige haargroei op plaatsen waar normaal haar groeit.",
+            "Een virusinfectie kan leiden tot hypertrichose door het verstoren van de normale werking van de haarfollikels.",
+            "De rug is een van de meest voorkomende plaatsen voor hypertrichose.",
+            "Melatonine is een hormoon dat de haargroei kan beïnvloeden.",
+            "Hormoontherapie kan worden gebruikt om hypertrichose te behandelen door het beïnvloeden van de hormonen die de haargroei reguleren.",
+            "Hoge bloeddruk is een mogelijke bijwerking van sommige behandelingen voor hypertrichose.",
+            "Ongeveer 10% van de mensen met hypertrichose heeft een familiegeschiedenis van de aandoening.",
+            "Hypertrichosis lanuginosa is een zeldzame vorm van hypertrichose die wordt gekenmerkt door de groei van lang, dun, lichtgekleurd haar.",
+            "De term 'wolf' wordt soms gebruikt om mensen met hypertrichose te beschrijven vanwege de overmatige haargroei die de aandoening veroorzaakt.",
+            "De congenitale vorm van hypertrichose is aanwezig bij de geboorte."
+        ];
 
-    return [$totalCorrect, $correctAnswersInfo, $incorrectAnswersInfo];
-}
+        foreach ($correctAnswers as $index => $correctAnswer) {
+            $questionNumber = $index + 1;
+            $userAnswer = $userAnswers[$index] ?? '';
 
-$pdo = getDbConnection();
-$username = $_SESSION['username'] ?? '';
+            if ($userAnswer == $correctAnswer) {
+                $totalCorrect++;
+                $correctAnswersInfo[] = ["Vraag $questionNumber", "Juist"];
+            } else {
+                $incorrectAnswersInfo[] = ["Vraag $questionNumber", "Fout", $correctAnswer, $correctAnswersExplanations[$index]];
+            }
+        }
 
-$correctAnswers = ["A", "B", "A", "D", "B", "A", "C", "A", "D", "A"];
-$userAnswers = [
-    $_POST['question1'] ?? '',
-    $_POST['question2'] ?? '',
-    $_POST['question3'] ?? '',
-    $_POST['question4'] ?? '',
-    $_POST['question5'] ?? '',
-    $_POST['question6'] ?? '',
-    $_POST['question7'] ?? '',
-    $_POST['question8'] ?? '',
-    $_POST['question9'] ?? '',
-    $_POST['question10'] ?? ''
-];
 
-list($totalCorrect, $correctAnswersInfo, $incorrectAnswersInfo) = handleQuizResult($pdo, $username, $userAnswers, $correctAnswers);
+        $sql = "INSERT INTO quiz_results (username, quiz_date, correct_answers, incorrect_answers) VALUES (?, NOW(), ?, ?)";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([$username, $totalCorrect, count($correctAnswers) - $totalCorrect]);
 
-echo "<div id='results'>$totalCorrect / 10 correct</div>";
+        return [$totalCorrect, $correctAnswersInfo, $incorrectAnswersInfo];
+    }
 
-echo "<div id='correct-answers'>Juiste antwoorden:";
-foreach ($correctAnswersInfo as $info) {
-    echo "<p>$info</p>";
-}
-echo "</div>";
+    $pdo = getDbConnection();
+    $username = $_SESSION['username'] ?? '';
 
-echo "<div id='incorrect-answers'>Foute antwoorden:";
-foreach ($incorrectAnswersInfo as $info) {
-    echo "<p>$info</p>";
-}
-echo "</div>";
-?>
+    $correctAnswers = ["Hypertrichose", "Virusinfectie", "Rug", "Melatonine", "Hormoontherapie", "Hoge bloeddruk", "Ongeveer 10%", "Hypertrichosis lanuginosa", "Wolf", "Congenitale vorm"];
+    $userAnswers = [
+        $_POST['question1'] ?? '',
+        $_POST['question2'] ?? '',
+        $_POST['question3'] ?? '',
+        $_POST['question4'] ?? '',
+        $_POST['question5'] ?? '',
+        $_POST['question6'] ?? '',
+        $_POST['question7'] ?? '',
+        $_POST['question8'] ?? '',
+        $_POST['question9'] ?? '',
+        $_POST['question10'] ?? ''
+    ];
 
-    </div>
+    list($totalCorrect, $correctAnswersInfo, $incorrectAnswersInfo) = handleQuizResult($pdo, $username, $userAnswers, $correctAnswers);
+
+    echo "<div id='results'>$totalCorrect / 10 correct</div>";
+
+    echo "<h2>Juiste antwoorden</h2>";
+    echo "<table border='0'>
+    <tr>
+    <th>Vraag</th>
+    <th>Status</th>
+        </tr>";
+    foreach ($correctAnswersInfo as $info) {
+        echo "<tr>";
+        foreach ($info as $item) {
+            echo "<td>$item</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
+
+    echo "<h2>Foute antwoorden</h2>";
+    echo "<table>";
+    echo "<tr><th>Vraag</th><th>Status</th><th>Correct antwoord</th><th>Uitleg</th></tr>";
+    foreach ($incorrectAnswersInfo as $info) {
+        echo "<tr>";
+        foreach ($info as $item) {
+            echo "<td>$item</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
+    ?>
+</div>
 
 </body>
 </html>
@@ -105,3 +130,12 @@ echo "</div>";
 
 
 
+
+
+
+
+
+
+
+
+        
