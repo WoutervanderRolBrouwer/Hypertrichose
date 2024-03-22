@@ -34,6 +34,7 @@ if ($result->num_rows > 0) {
     <th>E-mail</th>
     <th>Onderwerp</th>
     <th>Bericht</th>
+    <th>Tijd</th>
     </tr>";
 
     while($row = $result->fetch_assoc()) {
@@ -44,6 +45,7 @@ if ($result->num_rows > 0) {
         echo "<td>" . $row['mail_form'] . "</td>";
         echo "<td>" . $row['subject'] . "</td>";
         echo "<td>" . $row['message'] . "</td>";
+        echo "<td>" . $row['timestamp'] . "</td>";
         echo "</tr>";
     }
     echo "</table>";
