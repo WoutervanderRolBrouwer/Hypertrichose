@@ -98,7 +98,6 @@
             <h3 class="u-text u-text-default u-text-1">Wat kunt u vinden op deze website?</h3>
             <h5 class="u-text u-text-default u-text-2"><a href="Infopage/information.php">Informatie over Hypertrichose </h5></a>
             <h5 class="u-text u-text-default u-text-3"><a href="Quiz/introduction-quiz.php">Quiz uw kennis&nbsp; te testen </h5></a>
-            <h5 class="u-text u-text-default u-text-4"><a href="">Quiz of u Hypertrichose heeft </h5></a>
             <h5 class="u-text u-text-default u-text-5"><a href="contact/contact.php">Contact kunnen leggen met medische hulp </h5></a>
             <h5 class="u-text u-text-default u-text-6"><a href="behandelingen/behandeling.php">Welke hehandelingen er zijn voor Hypertrichose</h5></a>
             <h5 class="u-text u-text-default u-text-7"><a href="FAQ/FAQ.php">Paar veel gestelde vragen over Hypertrichose</h5></a>
