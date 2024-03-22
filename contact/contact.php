@@ -14,7 +14,9 @@
 <body>
 <header>
       <nav class="main-menu">
-          <img src="../logo/logo.svg" height="90px" alt="">
+      <a href="../index.php">
+  <img src="../logo/logo.svg" height="90px" alt="">
+      </a>
           <ul >
                   <li><a class="home" href="../index.php" id="home">HOME</a></li>
                   <li><a class="information" href="../infopage/information.php">INFORMATION</a></li>
