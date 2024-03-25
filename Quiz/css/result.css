@@ -27,6 +27,19 @@ th, td {
     text-align: left;
 }
 
+td.correct {
+    color: green;
+}
+
+td.incorrect {
+    color: red;
+}
+td, Status{
+    color: green;
+
+}
+
+
 th {
     background-color: #f2f2f2;
 }
