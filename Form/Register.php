@@ -41,6 +41,8 @@
             $dsn = "mysql:host=localhost;dbname=hypertrichose";
             $DBusername = "Wvdrb";
             $DBpassword = '5t$xBA4inc_S?pf';
+            $emailDupe = false;
+            $userDupe = false;
             
             try {
                 $pdo = new PDO($dsn, $DBusername, $DBpassword);
@@ -54,27 +56,11 @@
         
                 $stmt->execute();
         
-                echo "Registration successful!";
+                echo "<div class='succes'> <p class='succesmessage'> Registration successful!</p> </div>";
             } catch (PDOException $exception ) {
-                echo $exception->getMessage() . "<br>";
+                // echo $exception->getMessage() . "<br>";
                 
-                if ($exception->getCode() == 23000) {
-                    $usernameFound = strpos($exception->getMessage(), 'users.username') !== false;
-                    $emailFound = strpos($exception->getMessage(), 'users.email') !== false; 
-                    echo $emailFound . "<br>";
-                    echo $usernameFound . "<br>";
-                    if ($usernameFound && $emailFound) {
-                        echo "<p> Error: Beide uw gebruikersnaam en uw email zijn al in gebruik</p>";
-                    } elseif ($usernameFound) {
-                        echo "Error: Uw gewenste gebruikersnaam is al in gebruik.";
-                    } elseif ($emailFound) {
-                        echo "Error: Het opgegeven e-mailadres is al in gebruik.";
-                    } else {
-                        echo "Error: Duplicatiefout opgetreden.";
-                    }
-                } else {
-                    echo "Error: Er is een probleem opgetreden bij de registratie.";
-                }
+                echo "<div class='errorcontainer'> <p class='errorcode'> Er is een fout opgetreden bij het registeren. Probeer opnieuw!</p> </div>";
             }
         }
         

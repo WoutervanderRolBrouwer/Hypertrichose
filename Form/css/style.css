@@ -9,6 +9,24 @@ body {
   background-color: #435165;
   margin: 0;
 }
+.succes {
+  width: 100%;
+}
+.succesmessage {
+  text-align: center;
+  background-color: green;
+  width: 360px;
+  margin: auto;
+}
+.errorcontainer {
+  width: 100%;
+}
+.errorcode {
+  text-align: center;
+  background-color: red;
+  width: 360px;
+  margin: auto;
+}
 
 .loginForm {
   width: 400px;
