@@ -30,8 +30,12 @@
   <body data-path-to-root="./" data-include-products="false" class="u-body u-grey-10 u-xl-mode" data-lang="en">
     
     <header>
+      <!-- Hier hebben wij het logo als je erop klikt ga je naar de homepage -->
       <nav class="main-menu">
-          <img src="../logo/logo.svg" height="90px" alt="">
+      <a href="../index.php">
+  <img src="../logo/logo.svg" height="90px" alt="">
+      </a>
+      <!-- Hier wordt de navbar in een list element gezet en met de links naar de goede websites -->
           <ul >
                   <li><a class="home" href="../index.php" id="home">HOME</a></li>
                   <li><a class="information active" href="information.php">INFORMATION</a></li>
@@ -46,7 +50,7 @@
       </nav>
   </header>
     
-    
+  <!-- Dit is het eerste gedeeldte die jij kan ziet op de pagina met een foto ernaast-->
     <section class="u-clearfix u-section-1" id="sec-548d">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -75,6 +79,7 @@
         </div>
       </div>
     </section>
+    <!-- Dit is het tweede stuk met informatie en een foto ernaast -->
     <section class="u-clearfix u-grey-10 u-section-2" id="sec-5375">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -103,6 +108,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Dit is het derde gedeeldte met code met een plaatje ernaast -->
     <section class="u-clearfix u-grey-10 u-section-3" id="sec-077e">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -132,6 +139,7 @@
         </div>
       </div>
     </section>
+    <!-- Hier is het linker plaatje onderaan de pagina met een link naar iqhealthcare -->
     <section class="u-clearfix u-grey-10 u-section-4" id="sec-355e">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -149,6 +157,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Dit is het plaatje rechtsboven van de 3 plaatjes met een link naar de wikipedia van Hypertrichose -->
               <div class="u-size-30">
                 <div class="u-layout-col">
                   <div class="u-align-center u-container-style u-layout-cell u-size-30 u-white u-layout-cell-2">
@@ -159,6 +168,7 @@
                       </h5>
                     </div>
                   </div>
+                  <!-- Dit is het plaatje rechtonder met een link naar rarediseaases waar er wat over Hypertrichose wordt verteldt -->
                   <div class="u-container-style u-layout-cell u-size-30 u-white u-layout-cell-3">
                     <div class="u-container-layout u-container-layout-3">
                       <img class="u-expanded-width u-image u-image-default u-image-3" src="Styling/images/smaalpic3.webp" alt="" data-image-width="1200" data-image-height="675">
@@ -174,7 +184,7 @@
         </div>
       </div>
     </section>
-    
+    <!-- Hier staat het onderste gedeeldte van de pagina waar je op een knop kan drukken om bij de quiz te komen -->
     <section class="u-clearfix u-grey-10 u-section-4" id="sec-355e">
     <div class="u-size-30">
                 <div class="u-layout-col">
