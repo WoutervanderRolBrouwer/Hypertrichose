@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- dit is de main menu waar je de navbar kan bewerken met de logo. Je kan ook zien welke pagina met welke pagina is gelinkt-->
 <header>
       <nav class="main-menu">
       <a href="../index.php">
@@ -29,11 +30,14 @@
           </ul>
       </nav>
   </header>
+  <!-- Hieronder zie ik dat we de scss/style.scss bestand inladen in contact.php-->
 <style>
     <?php include '../scss/style.scss'; ?>
 </style>
 
-
+<!--Dit zijn de twee foto's die je gelijk kan zien bij de contactpagina,
+je kan ze hier ook aanpassen met de width en height of een andere foto te gebruiken. en daaronder met de div class kan je het welkom text bewerken.
+ -->
 <div class="row">
   <div class="column">
     <img src="groepsfoto.webp" alt="" style="width:100%">
@@ -55,7 +59,7 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
 
 
 
-
+<!-- Bij de class row en profile kan je het foto, titel, omschrijving veranderen. dit zijn de artsen.-->
 <div class="row">
   <div class="profile">
     <div class="card">
@@ -149,7 +153,7 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
 
 
 
-
+<!-- dit is de onderkant van het pagina waar je contact kan opnemen, en daarom een text heb om dat te laten zien -->
 <div class="container">
   <div style="text-align:center">
     <h2>Contacteer ons</h2>
@@ -165,6 +169,9 @@ Aarzel niet om contact met ons op te nemen via het onderstaande formulier.
   <div style="margin-left:55em">
     <h2 style="height: 36px;">Gegevens</h2>
   </div>
+  <!-- hier kan je het styling van map veranderen en je kan het gegevens invullen van het formulier, en dat wordt verstuurd naar het database.
+  daardoor gebruiken we de form action net als onder de column de form action="submit_contact.php, daar worden ze opgepakt."
+  -->
   <div class="row">
     <div class="column">
       <img src="google maps2.png" src="" style="width: 130%;height:88%;margin-left: -24px;">
