@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="../Quiz/css/result.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/main.css">
-
     <header>
   <nav class="main-menu">
       <img src="../logo/logo.svg" height="90px" alt="">
       <ul>
               <li><a class="home" href="../index.php" id="home">HOME</a></li>
               <li><a class="information" href="../InfoPage/information.php">INFORMATION</a></li>
+              <li><a class="form" href="../Form/form.php">FORM</a></li>
               <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
               <li><a class="behandelingen" href="../behandelingen/behandeling.php">BEHANDELINGEN</a></li>
               <li><a class="FAQ" href="../FAQ/FAQ.php">FAQ</a></li>
+              
       </ul>
 </nav>
 </header>
@@ -28,8 +29,8 @@
     <?php
     function getDbConnection() {
         $host = 'localhost';
-        $dbname = 'hypertrichose'; /**Pas deze naam niet aan */
-        $DBusername = 'stmakpabot'; /**Pas deze naam niet aan */
+        $dbname = 'hypertrichose'; //Pas deze naam niet aan
+        $DBusername = 'stmakpabot'; //Pas deze naam niet aan
         $DBpassword = 'zX[LqFHU@rx9rQJT';
         return new PDO("mysql:host=$host;dbname=$dbname", $DBusername, $DBpassword);
     }

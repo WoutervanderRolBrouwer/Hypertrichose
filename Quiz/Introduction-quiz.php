@@ -14,12 +14,16 @@
   <img src="../logo/logo.svg" height="90px" alt="">
       </a>
       <ul >
-              <li><a class="home" href="../index.php" id="home">HOME</a></li>
+             <li class=""><a class="home" href="../index.php" id="home">HOME</a></li>
               <li><a class="information active" href="../InfoPage/information.php">INFORMATION</a></li>
               <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
               <li><a class="behandelingen" href="../behandelingen/behandeling.php">BEHANDELINGEN</a></li>
               <li><a class="FAQ" href="../FAQ/FAQ.php">FAQ</a></li>
               
+            </ul>
+            <ul class="login">
+        <li class="login"><a class="form" href="../Form/form.php">Inloggen</a></li>
+
       </ul>
 </nav>
 </header>
