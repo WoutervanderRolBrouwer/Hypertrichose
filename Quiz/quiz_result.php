@@ -28,15 +28,17 @@
     <h1>Quiz Resultaat</h1>
 
     <?php
+    session_start(); // Start de sessie
+
     function getDbConnection() {
         $host = 'localhost';
-        $dbname = 'hypertrichose'; /**Pas deze naam niet aan */
-        $DBusername = 'stmakpabot'; /**Pas deze naam niet aan */
+        $dbname = 'hypertrichose'; //Pas deze naam niet aan
+        $DBusername = 'stmakpabot'; //Pas deze naam niet aan
         $DBpassword = 'zX[LqFHU@rx9rQJT';
         return new PDO("mysql:host=$host;dbname=$dbname", $DBusername, $DBpassword);
     }
 
-    function handleQuizResult($pdo, $username, $userAnswers, $correctAnswers) {
+    function handleQuizResult($pdo, $username, $userInputAnswers, $correctAnswers) {
         $totalCorrect = 0;
         $correctAnswersInfo = [];
         $incorrectAnswersInfo = [];
@@ -53,19 +55,20 @@
             "De congenitale vorm van hypertrichose is aanwezig bij de geboorte."
         ];
 
+        // Vergelijken van de ingevoerde antwoorden met de correcte antwoorden
         foreach ($correctAnswers as $index => $correctAnswer) {
             $questionNumber = $index + 1;
-            $userAnswer = $userAnswers[$index] ?? '';
+            $userInputAnswer = $userInputAnswers[$index] ?? '';
 
-            if ($userAnswer == $correctAnswer) {
+            if ($userInputAnswer == $correctAnswer) {
                 $totalCorrect++;
-                $correctAnswersInfo[] = ["Vraag $questionNumber", "Juist"];
+                $correctAnswersInfo[] = ["Vraag $questionNumber",  $userInputAnswer, "Juist"];
             } else {
-                $incorrectAnswersInfo[] = ["Vraag $questionNumber", "Fout", $correctAnswer, $correctAnswersExplanations[$index]];
+                $incorrectAnswersInfo[] = ["Vraag $questionNumber", $userInputAnswer, "Fout", $correctAnswer, $correctAnswersExplanations[$index]];
             }
         }
 
-
+        // Opslaan van het resultaat in de database
         $sql = "INSERT INTO quiz_results (username, quiz_date, correct_answers, incorrect_answers) VALUES (?, NOW(), ?, ?)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$username, $totalCorrect, count($correctAnswers) - $totalCorrect]);
@@ -77,7 +80,9 @@
     $username = $_SESSION['username'] ?? '';
 
     $correctAnswers = ["Hypertrichose", "Virusinfectie", "Rug", "Melatonine", "Hormoontherapie", "Hoge bloeddruk", "Ongeveer 10%", "Hypertrichosis lanuginosa", "Wolf", "Congenitale vorm"];
-    $userAnswers = [
+    
+    // Opslaan van de ingevoerde antwoorden
+    $userInputAnswers = [
         $_POST['question1'] ?? '',
         $_POST['question2'] ?? '',
         $_POST['question3'] ?? '',
@@ -90,16 +95,16 @@
         $_POST['question10'] ?? ''
     ];
 
-    list($totalCorrect, $correctAnswersInfo, $incorrectAnswersInfo) = handleQuizResult($pdo, $username, $userAnswers, $correctAnswers);
+    [$totalCorrect, $correctAnswersInfo, $incorrectAnswersInfo] = handleQuizResult($pdo, $username, $userInputAnswers, $correctAnswers);
 
-    echo "<div id='results'>$totalCorrect / 10 correct</div>";
-
+    // Weergave van de ingevoerde antwoorden in de tabellen
     echo "<h2>Juiste antwoorden</h2>";
     echo "<table border='0'>
-    <tr>
-    <th>Vraag</th>
-    <th>Status</th>
-        </tr>";
+            <tr>
+                <th>Vraag</th>
+                <th>Jouw antwoord</th>
+                <th>Status</th>
+            </tr>";
     foreach ($correctAnswersInfo as $info) {
         echo "<tr>";
         foreach ($info as $item) {
@@ -110,8 +115,14 @@
     echo "</table>";
 
     echo "<h2>Foute antwoorden</h2>";
-    echo "<table>";
-    echo "<tr><th>Vraag</th><th>Status</th><th>Correct antwoord</th><th>Uitleg</th></tr>";
+    echo "<table border='0'>
+            <tr>
+                <th>Vraag</th>
+                <th>Jouw antwoord</th>
+                <th>Status</th>
+                <th>Correct antwoord</th>
+                <th>Uitleg</th>
+            </tr>";
     foreach ($incorrectAnswersInfo as $info) {
         echo "<tr>";
         foreach ($info as $item) {
@@ -121,21 +132,8 @@
     }
     echo "</table>";
     ?>
+    
+    <button onclick="window.location.href='../Quiz/quiz.php'>Opnieuw proberen</button>
 </div>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
