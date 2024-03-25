@@ -27,11 +27,13 @@
 }</script>
 
 <header>
+  <!-- Hier heb je het logo met de link naar de homepage als je erop klikt -->
   <nav class="main-menu">
   <a href="../index.php">
   <img src="../logo/logo.svg" height="90px" alt="">
       </a>
       <ul >
+        <!-- Hier is de navbar met de links naar de goede pagina -->
              <li class="active"><a class="home active" href="index.php" id="home">HOME</a></li>
               <li><a class="information" href="InfoPage/information.php">INFORMATION</a></li>
               <li><a class="contact" href="contact/contact.php">CONTACT</a></li>
@@ -39,6 +41,7 @@
               <li><a class="FAQ" href="FAQ/FAQ.php">FAQ</a></li>
               
             </ul>
+            <!-- dit is de login knop rechtsboven die je naar het login scherm brengt  -->
             <ul class="login">
         <li class="login"><a class="form" href="Form/form.php">Inloggen</a></li>
 
@@ -47,7 +50,7 @@
 <style>  </style>
 
 </header>
-
+<!-- Dit is de banner waar je wordt verwelkomt op de pagina -->
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
@@ -58,6 +61,7 @@
         <h2 class="u-align-center u-text u-text-default u-text-1">Welkom op de website over Hypertrichose </h2>
       </div>
     </section>
+    <!-- Dit is de code waar een foto staat met een korte informatie over Hypertrichose Dit zie je bovenaan de pagina -->
     <section class="u-clearfix u-grey-10 u-section-2" id="sec-b05f">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -93,6 +97,7 @@
         </div>
       </div>
     </section>
+    <!-- Hier is het spinnenweb waar je kan vinden wat er op de website is en als je op de tekst klikt wordt je naar de goede pagina gebracht -->
     <section class="u-clearfix u-grey-10 u-section-3" id="sec-1cfb">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-expanded-width u-group u-shape-rectangle u-white u-group-1">
@@ -108,6 +113,7 @@
         </div>
       </div>
     </section>
+    <!-- Hier is het gedeelte waar er wordt verteld hoeveel mensen hypertrichosis hebben -->
     <section class="u-clearfix u-grey-10 u-section-4" id="sec-4b42">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -122,6 +128,7 @@
             </div>
           </div>
         </div>
+        <!-- Dit zijn de 3 foto's die onder het % aantal wordt getoond -->
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
           <div class="u-layout">
             <div class="u-layout-row">
@@ -139,6 +146,7 @@
         </div>
       </div>
     </section>
+    <!-- Hier staan 3 verhalen van mensen met hypertrichose waar een foto van hun zit met een link naar hun verhaal -->
     <section class="u-clearfix u-grey-10 u-section-5" id="sec-a0ce">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="custom-expanded u-container-style u-group u-shape-rectangle u-white u-group-1">
@@ -146,6 +154,7 @@
             <h3 class="u-text u-text-default u-text-1">Verhalen van mensen met Hypertrichose</h3>
           </div>
         </div>
+        <!-- Dit is het gedeeldte van de linker foto -->
         <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
@@ -157,6 +166,7 @@
                   </h5>
                 </div>
               </div>
+              <!-- Dit is het middelste foto met het verhaal -->
               <div class="u-container-style u-layout-cell u-size-20 u-white u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-3">
                   <img class="custom-expanded u-image u-image-default u-image-2" src="Homepage/images/Frontpage2.jpg" alt="" data-image-width="310" data-image-height="163">
@@ -165,6 +175,7 @@
                   </h5>
                 </div>
               </div>
+              <!-- Dit is de rechter foto met de link naar hun verhaal -->
               <div class="u-container-style u-layout-cell u-size-20 u-white u-layout-cell-3">
                 <div class="u-container-layout u-container-layout-4">
                   <img class="custom-expanded u-image u-image-default u-image-3" src="Homepage/images/Frontpage3.jpg" alt="" data-image-width="299" data-image-height="169">
@@ -181,9 +192,6 @@
     
     
     
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-1462"><div class="u-clearfix u-sheet u-sheet-1"></div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-  
-    </section>
+    
   
 </body></html>
