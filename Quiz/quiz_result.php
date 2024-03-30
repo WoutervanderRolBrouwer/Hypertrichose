@@ -8,22 +8,20 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/main.css">
     <header>
-  <nav class="main-menu">
-      <img src="../logo/logo.svg" height="90px" alt="">
-      <ul >
-             <li class=""><a class="home" href="../index.php" id="home">HOME</a></li>
-              <li><a class="information active" href="../InfoPage/information.php">INFORMATION</a></li>
-              <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
-              <li><a class="behandelingen" href="../behandelingen/behandeling.php">BEHANDELINGEN</a></li>
-              <li><a class="FAQ" href="../FAQ/FAQ.php">FAQ</a></li>
-              
+        <nav class="main-menu">
+            <img src="../logo/logo.svg" height="90px" alt="">
+            <ul>
+                <li class=""><a class="home" href="../index.php" id="home">HOME</a></li>
+                <li><a class="information active" href="../InfoPage/information.php">INFORMATION</a></li>
+                <li><a class="contact" href="../contact/contact.php">CONTACT</a></li>
+                <li><a class="behandelingen" href="../behandelingen/behandeling.php">BEHANDELINGEN</a></li>
+                <li><a class="FAQ" href="../FAQ/FAQ.php">FAQ</a></li>
             </ul>
             <ul class="login">
-        <li class="login"><a class="form" href="../Form/form.php">Inloggen</a></li>
-
-      </ul>
-</nav>
-</header>
+                <li class="login"><a class="form" href="../Form/form.php">Inloggen</a></li>
+            </ul>
+        </nav>
+    </header>
 </head>
 <body>
 <div class="quiz">
@@ -107,13 +105,17 @@
                 <th>Jouw antwoord</th>
                 <th>Status</th>
             </tr>";
-    foreach ($correctAnswersInfo as $info) {
-        echo "<tr>";
-        foreach ($info as $item) {
-            echo "<td>$item</td>";
-        }
-        echo "</tr>";
-    }
+            foreach ($correctAnswersInfo as $info) {
+                echo "<tr>";
+                foreach ($info as $index => $item) {
+                    if ($index == 2) { // De status is het derde item in de array, dus de index is 2
+                        echo "<td style='color: green;'>$item</td>";
+                    } else {
+                        echo "<td>$item</td>";
+                    }
+                }
+                echo "</tr>";
+            }
     echo "</table>";
 
     echo "<h2>Foute antwoorden</h2>";
@@ -125,17 +127,21 @@
                 <th>Correct antwoord</th>
                 <th>Uitleg</th>
             </tr>";
-    foreach ($incorrectAnswersInfo as $info) {
-        echo "<tr>";
-        foreach ($info as $item) {
-            echo "<td>$item</td>";
-        }
-        echo "</tr>";
-    }
+            foreach ($incorrectAnswersInfo as $info) {
+                echo "<tr>";
+                foreach ($info as $index => $item) {
+                    if ($index == 2) { // De status is het derde item in de array, dus de index is 2
+                        echo "<td style='color: red;'>$item</td>";
+                    } else {
+                        echo "<td>$item</td>";
+                    }
+                }
+                echo "</tr>";
+            }
     echo "</table>";
     ?>
     
-    <button onclick="window.location.href='../Quiz/quiz.php'>Opnieuw proberen</button>
+    
 </div>
 </body>
 </html>

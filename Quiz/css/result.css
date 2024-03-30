@@ -27,17 +27,14 @@ th, td {
     text-align: left;
 }
 
-td.correct {
+.correct {
     color: green;
 }
 
-td.incorrect {
+.incorrect {
     color: red;
 }
-td, Status{
-    color: green;
 
-}
 
 
 th {
