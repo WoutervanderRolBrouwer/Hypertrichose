@@ -5,11 +5,11 @@ require_once '../contact/config/config.php';
 // Databaseverbinding parameters
 $servername = 'localhost';
 // Naam van de database
-$dbName = 'projectcontactsql';
+$dbName = 'hypertrichose';
 // Naam van de gebruiker
-$username = 'projectcontact-2024';
+$username = 'root';
 // Wachtwoord van de gebruiker
-$password = '!T-WJWQA!hTnhxR[';
+$password = '';
 
 // Maak verbinding met de database
 $conn = new mysqli($servername, $username, $password, $dbName);
